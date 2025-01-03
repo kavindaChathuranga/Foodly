@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:foodly/Recipes/recipe_data.dart'; // Import the recipe data
 
 class FoodlyApp extends StatefulWidget {
   const FoodlyApp({super.key});
@@ -100,29 +101,6 @@ class _FoodlyAppState extends State<FoodlyApp> {
 }
 
 class HomeScreen extends StatelessWidget {
-  final List<Map<String, String>> recipes = [
-    {
-      'name': 'Chicken Curry',
-      'time': '50 m',
-      'image': 'assets/images/Chicken_Curry.png'
-    },
-    {
-      'name': 'Pork Kottu',
-      'time': '35 m',
-      'image': 'assets/images/Pork_Kottu.png'
-    },
-    {
-      'name': 'Chicken Biriyani',
-      'time': '1.5 hr',
-      'image': 'assets/images/Chicken_Biriyani.png'
-    },
-    {
-      'name': 'Mac and Cheese',
-      'time': '45 m',
-      'image': 'assets/images/Pork_Kottu.png'
-    },
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -146,7 +124,6 @@ class HomeScreen extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 hintText: 'Search',
-                suffixIcon: const Icon(Icons.search),
                 filled: true,
                 fillColor: const Color(0xFFE8E8E8),
                 contentPadding:
@@ -301,11 +278,4 @@ class FavoritesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Center(child: Text('Favorites Page'));
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: FoodlyApp(),
-  ));
 }
