@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "name": "Chicken Curry",
+      "time": "50 m",
+      "image": "assets/images/Chicken_Curry.png",
+      "ingredients": [
+        "1 lb chicken",
+        "2 onions, chopped",
+        "2 tomatoes, chopped",
+        "1 tbsp ginger garlic paste",
+        "1 tsp turmeric powder",
+        "1 tsp chili powder",
+        "1 tsp garam masala",
+        "2 tbsp oil",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "1. Heat oil in a pan and sauté onions until golden.",
+        "2. Add ginger garlic paste and cook for 2 minutes.",
+        "3. Add chicken and cook until browned.",
+        "4. Add tomatoes, turmeric, chili powder, and garam masala.",
+        "5. Add water and simmer for 30 minutes.",
+        "6. Serve hot with rice or naan."
+      ],
+      "favorite": false
+    },
+    {
+      "id": 2,
+      "name": "Pork Kottu",
+      "time": "35 m",
+      "image": "assets/images/Pork_Kottu.png",
+      "ingredients": [
+        "1 lb pork, cubed",
+        "2 eggs",
+        "2 cups kottu roti",
+        "1 onion, chopped",
+        "1 green pepper, chopped",
+        "2 tbsp soy sauce",
+        "1 tsp curry powder",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "1. Cook pork with soy sauce and curry powder.",
+        "2. Add onions, green pepper, and cook until softened.",
+        "3. Add kottu roti and stir-fry for 5 minutes.",
+        "4. Crack eggs into the mixture and stir until cooked.",
+        "5. Serve hot."
+      ],
+      "favorite": false
+    },
+    {
+      "id": 3,
+      "name": "Chicken Biriyani",
+      "time": "1.5 hr",
+      "image": "assets/images/Chicken_Biriyani.png",
+      "ingredients": [
+        "1 lb chicken",
+        "2 cups basmati rice",
+        "1 onion, fried",
+        "2 tomatoes, chopped",
+        "1 tbsp biriyani masala",
+        "2 cups yogurt",
+        "1/2 tsp saffron",
+        "2 tbsp ghee",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "1. Marinate chicken with yogurt, biriyani masala, and saffron.",
+        "2. Cook basmati rice and set aside.",
+        "3. In a pot, layer rice, chicken, and fried onions.",
+        "4. Cook on low heat for 30 minutes.",
+        "5. Serve hot with raita."
+      ],
+      "favorite": false
+    },
+    {
+      "id": 4,
+      "name": "Mac and Cheese",
+      "time": "45 m",
+      "image": "assets/images/Pork_Kottu.png",
+      "ingredients": [
+        "2 cups elbow macaroni",
+        "2 cups cheddar cheese, shredded",
+        "1 cup milk",
+        "2 tbsp butter",
+        "2 tbsp flour",
+        "1 tsp mustard",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "1. Boil macaroni and set aside.",
+        "2. In a pan, melt butter and add flour to make a roux.",
+        "3. Slowly add milk and stir until thickened.",
+        "4. Add cheese, mustard, and salt.",
+        "5. Combine sauce with macaroni and bake for 15 minutes.",
+        "6. Serve hot."
+      ],
+      "favorite": true
+    }
+  ]
+  
