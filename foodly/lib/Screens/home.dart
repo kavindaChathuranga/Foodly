@@ -29,17 +29,17 @@ class _FoodlyAppState extends State<FoodlyApp> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onTabTapped,
-        selectedItemColor: const Color(0xFFFF4B3E), // Highlight color
+        selectedItemColor: const Color(0xFFFF4B3E),
         unselectedItemColor: const Color(0xFF1A1A1A),
         selectedLabelStyle: const TextStyle(
           fontSize: 12,
           fontFamily: 'Poppins',
-          fontWeight: FontWeight.w600, // Bold text for all labels
+          fontWeight: FontWeight.w600,
         ),
         unselectedLabelStyle: const TextStyle(
           fontSize: 12,
           fontFamily: 'Poppins',
-          fontWeight: FontWeight.w600, // Bold text for all labels
+          fontWeight: FontWeight.w600,
         ),
         items: [
           BottomNavigationBarItem(
@@ -54,7 +54,7 @@ class _FoodlyAppState extends State<FoodlyApp> {
                       ? const Color(0xFFFF4B3E)
                       : const Color(0xFF1A1A1A),
                 ),
-                const SizedBox(height: 3), // Space between icon and label
+                const SizedBox(height: 3),
               ],
             ),
             label: 'Home',
@@ -71,7 +71,7 @@ class _FoodlyAppState extends State<FoodlyApp> {
                       ? const Color(0xFFFF4B3E)
                       : const Color(0xFF1A1A1A),
                 ),
-                const SizedBox(height: 3), // Space between icon and label
+                const SizedBox(height: 3),
               ],
             ),
             label: 'Categories',
@@ -88,7 +88,7 @@ class _FoodlyAppState extends State<FoodlyApp> {
                       ? const Color(0xFFFF4B3E)
                       : const Color(0xFF1A1A1A),
                 ),
-                const SizedBox(height: 3), // Space between icon and label
+                const SizedBox(height: 3),
               ],
             ),
             label: 'Favorites',
@@ -150,7 +150,7 @@ class HomeScreen extends StatelessWidget {
                 filled: true,
                 fillColor: const Color(0xFFE8E8E8),
                 contentPadding:
-                    const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                   borderSide: const BorderSide(color: Colors.grey),
@@ -168,7 +168,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 50),
             const Padding(
               padding:
-                  EdgeInsets.only(left: 5.0), // Adds 5px padding to the left
+              EdgeInsets.only(left: 5.0), // Adds 5px padding to the left
               child: Text(
                 'Explore',
                 style: TextStyle(
@@ -182,14 +182,14 @@ class HomeScreen extends StatelessWidget {
             Expanded(
               child: Padding(
                 padding:
-                    const EdgeInsets.only(top: 2), // Reduce top margin by 15px
+                const EdgeInsets.only(top: 2), // Reduce top margin by 15px
                 child: GridView.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2, // 2 cards per row
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
                     childAspectRatio:
-                        167 / 218, // Adjust to match card dimensions
+                    167 / 218, // Adjust to match card dimensions
                   ),
                   itemCount: recipes.length,
                   itemBuilder: (context, index) {
@@ -290,11 +290,200 @@ class HomeScreen extends StatelessWidget {
 }
 
 class CategoriesScreen extends StatelessWidget {
+  final List<Map<String, dynamic>> categoriesWithRecipes = [
+    {
+      'category': 'Main Meals',
+      'recipes': [
+        {
+          'name': 'Beef Fried Rice',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '30 m',
+        },
+        {
+          'name': 'Pork Kottu',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '35 m',
+        },
+        {
+          'name': 'Chicken Biriyani',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '1 hr',
+        },
+        {
+          'name': 'Mac and Cheeses',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '45 m',
+        },
+        {
+          'name': 'Spaghetti with Meat',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '40 m',
+        },
+        {
+          'name': 'Noodles',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '25 m',
+        },
+      ],
+    },
+    {
+      'category': 'Lunch',
+      'recipes': [
+        {
+          'name': 'Grilled Chicken',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '50 m',
+        },
+        {
+          'name': 'Caesar Salad',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '20 m',
+        },
+        {
+          'name': 'Pasta',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '30 m',
+        },
+      ],
+    },
+    {
+      'category': 'Dinner',
+      'recipes': [
+        {
+          'name': 'Steak',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '1 hr',
+        },
+        {
+          'name': 'Soup',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '40 m',
+        },
+        {
+          'name': 'Pizza',
+          'image': 'assets/images/Pork_Kottu.png',
+          'time': '30 m',
+        },
+      ],
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('Categories Page'));
+    final screenWidth = MediaQuery.of(context).size.width;
+    final cardWidth = screenWidth / 3 - 16; // Divide screen width by 3 and subtract spacing
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Categories',
+          style: TextStyle(
+            fontWeight: FontWeight.bold, // Makes the title bold
+            fontSize: 20, // Optional: Adjust font size
+          ),
+        ),
+        backgroundColor: const Color(0xFFF5F5F5),
+        foregroundColor: Colors.black, // AppBar text color set to black
+      ),
+      body: Container(
+        color: const Color(0xFFF5F5F5), // Light gray background color for the whole screen
+        child: ListView.builder(
+          itemCount: categoriesWithRecipes.length,
+          itemBuilder: (context, index) {
+            final category = categoriesWithRecipes[index];
+            return Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Category title
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Text(
+                      category['category'] ?? 'Unknown Category', // Handle null values
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  // Horizontal card slider for the category
+                  SizedBox(
+                    height: 180, // Decreased card height
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: category['recipes']?.length ?? 0, // Handle null list
+                      itemBuilder: (context, recipeIndex) {
+                        final recipe = category['recipes']?[recipeIndex];
+                        if (recipe == null) return Container(); // Handle null recipes
+
+                        return Container(
+                          width: cardWidth, // Adjust card width to fit 3 cards
+                          margin: const EdgeInsets.symmetric(horizontal: 8),
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            elevation: 2,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                ClipRRect(
+                                  borderRadius: const BorderRadius.vertical(
+                                    top: Radius.circular(10),
+                                  ),
+                                  child: Image.asset(
+                                    recipe['image'] ?? 'assets/images/default.png', // Handle null image
+                                    height: 90, // Reduced image height
+                                    width: double.infinity,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        recipe['name'] ?? 'Unnamed Recipe', // Handle null name
+                                        style: const TextStyle(
+                                          fontSize: 14, // Adjusted font size
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 4),
+                                      // Displaying the time
+                                      Text(
+                                        recipe['time'] ?? 'Unknown Time', // Handle null time
+                                        style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w400,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+      ),
+    );
   }
 }
+
+
 
 class FavoritesScreen extends StatelessWidget {
   @override

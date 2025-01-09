@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:foodly/Screens/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
-  runApp(const FoodlyApp());
-}
+
+void main() async{}
 
 class FoodlyApp extends StatelessWidget {
   const FoodlyApp({super.key});
