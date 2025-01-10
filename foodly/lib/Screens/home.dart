@@ -1,5 +1,10 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // For loading the JSON file
 import 'package:flutter_svg/flutter_svg.dart';
+import 'recipe_details_screen.dart'; // Import the new screen
+import 'categories_screen.dart'; // Import CategoriesScreen
+import 'favorites_screen.dart'; // Import the new FavoritesScreen file
 
 class FoodlyApp extends StatefulWidget {
   const FoodlyApp({super.key});
@@ -29,17 +34,17 @@ class _FoodlyAppState extends State<FoodlyApp> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onTabTapped,
-        selectedItemColor: const Color(0xFFFF4B3E), // Highlight color
+        selectedItemColor: const Color(0xFFFF4B3E),
         unselectedItemColor: const Color(0xFF1A1A1A),
         selectedLabelStyle: const TextStyle(
           fontSize: 12,
           fontFamily: 'Poppins',
-          fontWeight: FontWeight.w600, // Bold text for all labels
+          fontWeight: FontWeight.w600,
         ),
         unselectedLabelStyle: const TextStyle(
           fontSize: 12,
           fontFamily: 'Poppins',
-          fontWeight: FontWeight.w600, // Bold text for all labels
+          fontWeight: FontWeight.w600,
         ),
         items: [
           BottomNavigationBarItem(
@@ -54,7 +59,7 @@ class _FoodlyAppState extends State<FoodlyApp> {
                       ? const Color(0xFFFF4B3E)
                       : const Color(0xFF1A1A1A),
                 ),
-                const SizedBox(height: 3), // Space between icon and label
+                const SizedBox(height: 3),
               ],
             ),
             label: 'Home',
@@ -71,7 +76,7 @@ class _FoodlyAppState extends State<FoodlyApp> {
                       ? const Color(0xFFFF4B3E)
                       : const Color(0xFF1A1A1A),
                 ),
-                const SizedBox(height: 3), // Space between icon and label
+                const SizedBox(height: 3),
               ],
             ),
             label: 'Categories',
@@ -88,7 +93,7 @@ class _FoodlyAppState extends State<FoodlyApp> {
                       ? const Color(0xFFFF4B3E)
                       : const Color(0xFF1A1A1A),
                 ),
-                const SizedBox(height: 3), // Space between icon and label
+                const SizedBox(height: 3),
               ],
             ),
             label: 'Favorites',
@@ -99,29 +104,41 @@ class _FoodlyAppState extends State<FoodlyApp> {
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  final List<Map<String, String>> recipes = [
-    {
-      'name': 'Chicken Curry',
-      'time': '50 m',
-      'image': 'assets/images/Chicken_Curry.png'
-    },
-    {
-      'name': 'Pork Kottu',
-      'time': '35 m',
-      'image': 'assets/images/Pork_Kottu.png'
-    },
-    {
-      'name': 'Chicken Biriyani',
-      'time': '1.5 hr',
-      'image': 'assets/images/Chicken_Biriyani.png'
-    },
-    {
-      'name': 'Mac and Cheese',
-      'time': '45 m',
-      'image': 'assets/images/Pork_Kottu.png'
-    },
-  ];
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  List<dynamic> recipes = [];
+  List<dynamic> filteredRecipes = [];
+  TextEditingController searchController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _loadRecipes();
+    searchController.addListener(_filterRecipes);
+  }
+
+  Future<void> _loadRecipes() async {
+    final String jsonString = await rootBundle.loadString('assets/recipes.json');
+    final List<dynamic> jsonData = json.decode(jsonString);
+
+    setState(() {
+      recipes = jsonData;
+      filteredRecipes = recipes;
+    });
+  }
+
+  void _filterRecipes() {
+    String query = searchController.text.toLowerCase();
+    setState(() {
+      filteredRecipes = recipes.where((recipe) {
+        return recipe['name'].toLowerCase().contains(query);
+      }).toList();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -144,13 +161,14 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 40),
             TextField(
+              controller: searchController,
               decoration: InputDecoration(
                 hintText: 'Search',
                 suffixIcon: const Icon(Icons.search),
                 filled: true,
                 fillColor: const Color(0xFFE8E8E8),
-                contentPadding:
-                    const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                contentPadding: const EdgeInsets.symmetric(
+                    vertical: 15, horizontal: 20),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                   borderSide: const BorderSide(color: Colors.grey),
@@ -167,8 +185,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 50),
             const Padding(
-              padding:
-                  EdgeInsets.only(left: 5.0), // Adds 5px padding to the left
+              padding: EdgeInsets.only(left: 5.0),
               child: Text(
                 'Explore',
                 style: TextStyle(
@@ -181,26 +198,32 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 2),
             Expanded(
               child: Padding(
-                padding:
-                    const EdgeInsets.only(top: 2), // Reduce top margin by 15px
+                padding: const EdgeInsets.only(top: 2),
                 child: GridView.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2, // 2 cards per row
+                    crossAxisCount: 2,
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
-                    childAspectRatio:
-                        167 / 218, // Adjust to match card dimensions
+                    childAspectRatio: 167 / 218,
                   ),
-                  itemCount: recipes.length,
+                  itemCount: filteredRecipes.length,
                   itemBuilder: (context, index) {
-                    final recipe = recipes[index];
+                    final recipe = filteredRecipes[index];
                     return GestureDetector(
                       onTap: () {
-                        // Navigate to recipe details
+                        // Navigate to recipe details screen
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => RecipeDetailsScreen(
+                              recipe: recipe,
+                            ),
+                          ),
+                        );
                       },
                       child: SizedBox(
-                        height: 218, // Set card height
-                        width: 167, // Set card width
+                        height: 218,
+                        width: 167,
                         child: Card(
                           color: const Color(0xFFE0E0E0),
                           elevation: 2,
@@ -217,7 +240,7 @@ class HomeScreen extends StatelessWidget {
                                       top: Radius.circular(10),
                                     ),
                                     child: Image.asset(
-                                      recipe['image']!,
+                                      recipe['image'],
                                       height: 174,
                                       width: double.infinity,
                                       fit: BoxFit.cover,
@@ -229,12 +252,11 @@ class HomeScreen extends StatelessWidget {
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 8),
                                         child: Text(
-                                          recipe['name']!,
+                                          recipe['name'],
                                           textAlign: TextAlign.center,
                                           style: const TextStyle(
-                                            color: Color(0xFF1A1A1A),
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.w900,
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.bold,
                                             fontFamily: 'Inter',
                                           ),
                                         ),
@@ -244,29 +266,29 @@ class HomeScreen extends StatelessWidget {
                                 ],
                               ),
                               Positioned(
-                                top: 10,
-                                right: 2,
+                                top: 8,
+                                right: 8,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      vertical: 4, horizontal: 8),
+                                      vertical: 4, horizontal: 6),
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFFFF4B3E),
-                                    borderRadius: BorderRadius.circular(5),
+                                    color: Colors.redAccent.withOpacity(0.8),
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Row(
                                     children: [
                                       const Icon(
                                         Icons.timer,
-                                        size: 14,
-                                        color: Color(0xFFF5F5F5),
+                                        size: 16,
+                                        color: Colors.white,
                                       ),
                                       const SizedBox(width: 4),
                                       Text(
-                                        recipe['time']!,
+                                        recipe['time'],
                                         style: const TextStyle(
                                           fontSize: 12,
-                                          color: Color(0xFFF5F5F5),
-                                          fontFamily: 'Inter',
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w500,
                                         ),
                                       ),
                                     ],
@@ -281,31 +303,10 @@ class HomeScreen extends StatelessWidget {
                   },
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
     );
   }
-}
-
-class CategoriesScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return const Center(child: Text('Categories Page'));
-  }
-}
-
-class FavoritesScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return const Center(child: Text('Favorites Page'));
-  }
-}
-
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: FoodlyApp(),
-  ));
 }

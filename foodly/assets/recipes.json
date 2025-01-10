@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Chicken Curry",
+    "time": "50 m",
+    "image": "assets/images/Chicken_Curry.png",
+    "ingredients": ["Chicken", "Curry Powder", "Coconut Milk", "Spices"],
+    "instructions": [
+      "Marinate the chicken with spices and curry powder for 20 minutes.",
+      "Heat oil in a pan, sauté onions until golden.",
+      "Add marinated chicken and cook for 10 minutes.",
+      "Pour in coconut milk, mix well, and simmer for 20 minutes on low heat.",
+      "Garnish with fresh coriander and serve hot."
+    ],
+    "category": "Main Course"
+  },
+  {
+    "id": 2,
+    "name": "Pork Kottu",
+    "time": "35 m",
+    "image": "assets/images/Pork_Kottu.png",
+    "ingredients": ["Pork", "Roti", "Vegetables", "Spices"],
+    "instructions": [
+      "Cook pork in a pressure cooker with salt and pepper until tender.",
+      "Chop roti into thin strips.",
+      "Heat oil in a large pan, stir-fry vegetables with spices until aromatic.",
+      "Add cooked pork and roti strips to the pan and stir-fry for 5-10 minutes.",
+      "Serve with spicy curry sauce or chutney."
+    ],
+    "category": "Main Course"
+  },
+  {
+    "id": 3,
+    "name": "Chicken Biriyani",
+    "time": "1.5 hr",
+    "image": "assets/images/Chicken_Biriyani.png",
+    "ingredients": ["Chicken", "Rice", "Yogurt", "Spices"],
+    "instructions": [
+      "Marinate chicken with yogurt, spices, and lemon juice for 30 minutes.",
+      "Cook rice with whole spices (like bay leaves, cardamom, and cloves) until 80% done.",
+      "In a large pot, layer the marinated chicken and rice alternately.",
+      "Cover and cook on low heat (dum) for 30-40 minutes.",
+      "Mix gently before serving and garnish with fried onions and raisins."
+    ],
+    "category": "Main Course"
+  },
+  {
+    "id": 4,
+    "name": "Mac and Cheese",
+    "time": "45 m",
+    "image": "assets/images/Mac_and_Cheese.png",
+    "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
+    "instructions": [
+      "Boil macaroni in salted water until al dente, then drain.",
+      "In a saucepan, melt butter, whisk in flour, and cook for 2 minutes.",
+      "Gradually add milk, stirring constantly until thickened.",
+      "Stir in shredded cheese until melted and creamy.",
+      "Combine macaroni with cheese sauce, transfer to a baking dish, and bake at 180°C (350°F) for 20 minutes until golden."
+    ],
+    "category": "Side Dish"
+  },
+  {
+    "id": 5,
+    "name": "Mac and Cheese-2",
+    "time": "45 m",
+    "image": "assets/images/Mac_and_Cheese.png",
+    "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
+    "instructions": [
+      "Boil macaroni in salted water until al dente, then drain.",
+      "In a saucepan, melt butter, whisk in flour, and cook for 2 minutes.",
+      "Gradually add milk, stirring constantly until thickened.",
+      "Stir in shredded cheese until melted and creamy.",
+      "Combine macaroni with cheese sauce, transfer to a baking dish, and bake at 180°C (350°F) for 20 minutes until golden."
+    ],
+    "category": "Side Dish"
+  },
+  {
+    "id": 6,
+    "name": "Mac and Cheese-2",
+    "time": "45 m",
+    "image": "assets/images/Mac_and_Cheese.png",
+    "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
+    "instructions": [
+      "Boil macaroni in salted water until al dente, then drain.",
+      "In a saucepan, melt butter, whisk in flour, and cook for 2 minutes.",
+      "Gradually add milk, stirring constantly until thickened.",
+      "Stir in shredded cheese until melted and creamy.",
+      "Combine macaroni with cheese sauce, transfer to a baking dish, and bake at 180°C (350°F) for 20 minutes until golden."
+    ],
+    "category": "Side Dish"
+  },
+  {
+    "id": 7,
+    "name": "Mac and Cheese-2",
+    "time": "45 m",
+    "image": "assets/images/Mac_and_Cheese.png",
+    "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
+    "instructions": [
+      "Boil macaroni in salted water until al dente, then drain.",
+      "In a saucepan, melt butter, whisk in flour, and cook for 2 minutes.",
+      "Gradually add milk, stirring constantly until thickened.",
+      "Stir in shredded cheese until melted and creamy.",
+      "Combine macaroni with cheese sauce, transfer to a baking dish, and bake at 180°C (350°F) for 20 minutes until golden."
+    ],
+    "category": "Side Dish-tem-2"
+  }
+]
