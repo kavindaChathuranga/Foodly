@@ -17,7 +17,7 @@ class FoodlyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.redAccent),
       ),
-      home: SplashScreen(), // Set SplashScreen as the home
+      home: const SplashScreen(), // Set SplashScreen as the home
     );
   }
 }
