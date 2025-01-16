@@ -61,9 +61,9 @@
   },
   {
     "id": 5,
-    "name": "Mac and Cheese-2",
+    "name": "Tandoori Pasta",
     "time": "45 m",
-    "image": "assets/images/Mac_and_Cheese.png",
+    "image": "assets/images/tandoori-pasta.jpg",
     "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
     "instructions": [
       "Boil macaroni in salted water until al dente, then drain.",
@@ -76,9 +76,9 @@
   },
   {
     "id": 6,
-    "name": "Mac and Cheese-2",
+    "name": "Cheesy Lasagna",
     "time": "45 m",
-    "image": "assets/images/Mac_and_Cheese.png",
+    "image": "assets/images/Lasagna.jpg",
     "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
     "instructions": [
       "Boil macaroni in salted water until al dente, then drain.",
@@ -91,9 +91,9 @@
   },
   {
     "id": 7,
-    "name": "Mac and Cheese-2",
+    "name": "BBQ Chicken Pizza",
     "time": "45 m",
-    "image": "assets/images/Mac_and_Cheese.png",
+    "image": "assets/images/Pizza.jpg",
     "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
     "instructions": [
       "Boil macaroni in salted water until al dente, then drain.",

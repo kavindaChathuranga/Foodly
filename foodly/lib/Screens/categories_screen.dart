@@ -23,7 +23,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   Future<void> _loadCategories() async {
     // Get the writable directory path
     final directory = await getApplicationDocumentsDirectory();
-    final filePath = '${directory.path}/recipes.json'; // Assuming the file is stored as recipes.json
+    final filePath =
+        '${directory.path}/recipes.json'; // Assuming the file is stored as recipes.json
 
     // Check if the file exists
     final file = File(filePath);
@@ -101,14 +102,16 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                             GestureDetector(
                               onTap: () {
                                 setState(() {
-                                  expandedCategories[categoryName] = !(expandedCategories[categoryName] ?? false);
+                                  expandedCategories[categoryName] =
+                                      !(expandedCategories[categoryName] ??
+                                          false);
                                 });
                               },
                               child: const Text(
                                 "See All",
                                 style: TextStyle(
                                   fontSize: 16,
-                                  color: Colors.blue,
+                                  color: Color(0xFFFF4B3E),
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -120,13 +123,16 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                         GridView.builder(
                           shrinkWrap: true,
                           physics: const NeverScrollableScrollPhysics(),
-                          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          gridDelegate:
+                              const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
                             crossAxisSpacing: 10,
                             mainAxisSpacing: 10,
                             childAspectRatio: 167 / 218,
                           ),
-                          itemCount: expandedCategories[categoryName] == true ? recipes.length : (recipes.length > 2 ? 2 : recipes.length),
+                          itemCount: expandedCategories[categoryName] == true
+                              ? recipes.length
+                              : (recipes.length > 2 ? 2 : recipes.length),
                           itemBuilder: (context, recipeIndex) {
                             final recipe = recipes[recipeIndex];
                             return GestureDetector(
@@ -152,10 +158,12 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                                   child: Stack(
                                     children: [
                                       Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           ClipRRect(
-                                            borderRadius: const BorderRadius.vertical(
+                                            borderRadius:
+                                                const BorderRadius.vertical(
                                               top: Radius.circular(10),
                                             ),
                                             child: Image.asset(
@@ -168,9 +176,12 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                                           Expanded(
                                             child: Center(
                                               child: Padding(
-                                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 8),
                                                 child: Text(
-                                                  recipe['name'] ?? 'Unnamed Recipe',
+                                                  recipe['name'] ??
+                                                      'Unnamed Recipe',
                                                   textAlign: TextAlign.center,
                                                   style: const TextStyle(
                                                     fontSize: 14,

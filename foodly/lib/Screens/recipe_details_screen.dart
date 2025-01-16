@@ -22,7 +22,8 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
   @override
   void initState() {
     super.initState();
-    isFavorite = widget.recipe['isFavorite'] ?? false; // Initialize isFavorite here
+    isFavorite =
+        widget.recipe['isFavorite'] ?? false; // Initialize isFavorite here
     _loadRecipes();
   }
 
@@ -57,7 +58,7 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
   // Function to get the favorite status of the current recipe
   bool _getFavoriteStatus() {
     final recipe = recipes.firstWhere(
-          (r) => r['name'] == widget.recipe['name'],
+      (r) => r['name'] == widget.recipe['name'],
       orElse: () => widget.recipe,
     );
     return recipe['isFavorite'] ?? false;
@@ -105,24 +106,44 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
             children: [
               Stack(
                 children: [
-                  Image.asset(
-                    widget.recipe['image'],
-                    width: MediaQuery.of(context).size.width, // Full width
-                    fit: BoxFit.cover, // Optional: adjust to cover the space
+                  ClipRRect(
+                    borderRadius:
+                        BorderRadius.circular(18.0), // Apply rounded corners
+                    child: Image.asset(
+                      widget.recipe['image'],
+                      // width: MediaQuery.of(context).size.width, // Full width
+                      width: 420,
+                      height: 200, // Set height to 200
+                      fit: BoxFit.cover, // Ensures the image covers the space
+                    ),
                   ),
                   Positioned(
                     top: 10,
                     right: 10,
                     child: Container(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 6.0, horizontal: 12.0),
-                      color: Colors.black.withOpacity(0.6),
-                      child: Text(
-                        widget.recipe['time'],
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+                          vertical: 6, horizontal: 8),
+                      decoration: BoxDecoration(
+                        color: Color(0xFFFF4B3E),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.timer,
+                            size: 20,
+                            color: Colors.white,
+                          ),
+                          const SizedBox(width: 4),
+                          Text(
+                            widget.recipe['time'],
+                            style: const TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -130,7 +151,8 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
               ),
               const SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween, // Align name and favorite button
+                mainAxisAlignment: MainAxisAlignment
+                    .spaceBetween, // Align name and favorite button
                 children: [
                   Text(
                     widget.recipe['name'],
@@ -157,7 +179,9 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
               const SizedBox(height: 20),
               Text(
                 'Ingredients:',
-                style: Theme.of(context).textTheme.titleLarge, // Use titleLarge for display
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge, // Use titleLarge for display
               ),
               const SizedBox(height: 10),
               ...widget.recipe['ingredients'].map<Widget>((ingredient) {
@@ -166,7 +190,9 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
               const SizedBox(height: 20),
               Text(
                 'Instructions:',
-                style: Theme.of(context).textTheme.titleLarge, // Use titleLarge for display
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge, // Use titleLarge for display
               ),
               const SizedBox(height: 10),
               ...widget.recipe['instructions'].map<Widget>((instruction) {

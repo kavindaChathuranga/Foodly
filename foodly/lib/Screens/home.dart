@@ -122,7 +122,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> _loadRecipes() async {
-    final String jsonString = await rootBundle.loadString('assets/recipes.json');
+    final String jsonString =
+        await rootBundle.loadString('assets/recipes.json');
     final List<dynamic> jsonData = json.decode(jsonString);
 
     setState(() {
@@ -156,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontSize: 27,
                 fontWeight: FontWeight.w800,
                 fontFamily: 'Inter',
-                color: Colors.red,
+                color: Color(0xFFFF4B3E),
               ),
             ),
             const SizedBox(height: 40),
@@ -167,8 +168,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 suffixIcon: const Icon(Icons.search),
                 filled: true,
                 fillColor: const Color(0xFFE8E8E8),
-                contentPadding: const EdgeInsets.symmetric(
-                    vertical: 15, horizontal: 20),
+                contentPadding:
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                   borderSide: const BorderSide(color: Colors.grey),
@@ -255,8 +256,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                           recipe['name'],
                                           textAlign: TextAlign.center,
                                           style: const TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold,
+                                            fontSize: 19,
+                                            fontWeight: FontWeight.w900,
+                                            color: Color(0xFF1A1A1A),
                                             fontFamily: 'Inter',
                                           ),
                                         ),
@@ -267,12 +269,12 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               Positioned(
                                 top: 8,
-                                right: 8,
+                                right: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
                                       vertical: 4, horizontal: 6),
                                   decoration: BoxDecoration(
-                                    color: Colors.redAccent.withOpacity(0.8),
+                                    color: Color(0xFFFF4B3E),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Row(
