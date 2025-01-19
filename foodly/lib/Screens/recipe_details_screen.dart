@@ -157,15 +157,17 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
                   Text(
                     widget.recipe['name'],
                     style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 27,
+                      fontWeight: FontWeight.w800,
                       fontFamily: 'Inter',
+                      color: Color(0xFF1A1A1A),
                     ),
                   ),
                   IconButton(
                     icon: Icon(
                       isFavorite ? Icons.favorite : Icons.favorite_border,
                       color: const Color(0xFFFF4B3E),
+                      size: 34,
                     ),
                     onPressed: () {
                       setState(() {
@@ -179,32 +181,40 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
               const SizedBox(height: 20),
               Text(
                 'Ingredients:',
-                style: Theme.of(context)
-                    .textTheme
-                    .titleLarge, // Use titleLarge for display
+                style: TextStyle(
+                  fontSize: 22, // Optional: Set the font size
+                  fontWeight: FontWeight.bold, // Optional: Make it bold
+                  color: const Color(0xFFFF4B3E), // Set color to 0xFFFF4B3E
+                ),
               ),
               const SizedBox(height: 10),
               ...widget.recipe['ingredients'].map<Widget>((ingredient) {
-                return Text('• $ingredient');
+                return Text(
+                  '• $ingredient',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                );
               }).toList(),
               const SizedBox(height: 20),
               Text(
                 'Instructions:',
-                style: Theme.of(context)
-                    .textTheme
-                    .titleLarge, // Use titleLarge for display
+                style: TextStyle(
+                  fontSize: 22, // Optional: Set the font size
+                  fontWeight: FontWeight.bold, // Optional: Make it bold
+                  color: const Color(0xFFFF4B3E), // Set color to 0xFFFF4B3E
+                ),
               ),
               const SizedBox(height: 10),
               ...widget.recipe['instructions'].map<Widget>((instruction) {
-                return Text('• $instruction');
+                return Text(
+                  '• $instruction',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                );
               }).toList(),
               const SizedBox(height: 20),
-              Row(
-                children: [
-                  const Text('Preparation Time: '),
-                  Text(widget.recipe['time']),
-                ],
-              ),
             ],
           ),
         ),

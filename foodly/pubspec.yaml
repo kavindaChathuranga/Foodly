@@ -67,6 +67,9 @@ flutter:
     - assets/categories.svg
     - assets/home.svg
     - assets/images/
+    - assets/images/soup/
+    - assets/images/smoothies/
+    - assets/images/bites/
     - assets/recipes.json
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -288,7 +288,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       Text(
                                         recipe['time'],
                                         style: const TextStyle(
-                                          fontSize: 12,
+                                          fontSize: 14,
                                           color: Colors.white,
                                           fontWeight: FontWeight.w500,
                                         ),
