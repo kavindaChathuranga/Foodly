@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart'; // For loading assets
 
@@ -97,6 +98,15 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFFFF4B3E),
+        leading: IconButton(
+          icon: SvgPicture.asset(
+            'assets/back-button.svg',
+            color: Colors.white,
+            width: 24,
+            height: 24,
+          ),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

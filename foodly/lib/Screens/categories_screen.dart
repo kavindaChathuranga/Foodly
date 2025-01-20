@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:path_provider/path_provider.dart'; // For accessing writable directory
-import 'dart:io'; // For file operations
-import 'recipe_details_screen.dart'; // Import the new screen
+import 'package:path_provider/path_provider.dart';
+import 'dart:io';
+import 'recipe_details_screen.dart';
 
 class CategoriesScreen extends StatefulWidget {
   @override
@@ -12,7 +12,7 @@ class CategoriesScreen extends StatefulWidget {
 class _CategoriesScreenState extends State<CategoriesScreen> {
   List<Map<String, dynamic>> categories = [];
   List<Map<String, dynamic>> filteredCategories = [];
-  Map<String, bool> expandedCategories = {}; // Track expanded categories
+  Map<String, bool> expandedCategories = {};
 
   @override
   void initState() {
@@ -21,19 +21,14 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   }
 
   Future<void> _loadCategories() async {
-    // Get the writable directory path
     final directory = await getApplicationDocumentsDirectory();
-    final filePath =
-        '${directory.path}/recipes.json'; // Assuming the file is stored as recipes.json
+    final filePath = '${directory.path}/recipes.json';
 
-    // Check if the file exists
     final file = File(filePath);
     if (await file.exists()) {
-      // If the file exists, read and parse the JSON data
       final jsonString = await file.readAsString();
       final List<dynamic> jsonData = json.decode(jsonString);
 
-      // Create a map for categories
       final Map<String, List<Map<String, dynamic>>> categoryMap = {};
       for (var item in jsonData) {
         final categoryName = item['category'] ?? 'No Category';
@@ -43,7 +38,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         categoryMap[categoryName]?.add(item);
       }
 
-      // Now populate the categories list from the map
       setState(() {
         categories = categoryMap.entries
             .map((entry) => {'category': entry.key, 'recipes': entry.value})
@@ -51,9 +45,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         filteredCategories = categories;
       });
     } else {
-      // Handle the case where the file does not exist
       print('File not found: $filePath');
-      // Optionally, show a message to the user or load default data
     }
   }
 
@@ -107,10 +99,12 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                                           false);
                                 });
                               },
-                              child: const Text(
-                                "See All",
-                                style: TextStyle(
-                                  fontSize: 16,
+                              child: Text(
+                                expandedCategories[categoryName] == true
+                                    ? "Hide"
+                                    : "See All",
+                                style: const TextStyle(
+                                  fontSize: 17,
                                   color: Color(0xFFFF4B3E),
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -120,93 +114,101 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                       ),
                       const SizedBox(height: 10),
                       if (recipes != null && recipes.isNotEmpty)
-                        GridView.builder(
-                          shrinkWrap: true,
-                          physics: const NeverScrollableScrollPhysics(),
-                          gridDelegate:
-                              const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 10,
-                            mainAxisSpacing: 10,
-                            childAspectRatio: 167 / 218,
-                          ),
-                          itemCount: expandedCategories[categoryName] == true
-                              ? recipes.length
-                              : (recipes.length > 2 ? 2 : recipes.length),
-                          itemBuilder: (context, recipeIndex) {
-                            final recipe = recipes[recipeIndex];
-                            return GestureDetector(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => RecipeDetailsScreen(
-                                      recipe: recipe,
-                                    ),
-                                  ),
-                                );
-                              },
-                              child: SizedBox(
-                                height: 218,
-                                width: 167,
-                                child: Card(
-                                  color: const Color(0xFFE0E0E0),
-                                  elevation: 2,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  child: Stack(
-                                    children: [
-                                      Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          ClipRRect(
-                                            borderRadius:
-                                                const BorderRadius.vertical(
-                                              top: Radius.circular(10),
-                                            ),
-                                            child: Image.asset(
-                                              recipe['image'] ?? '',
-                                              height: 174,
-                                              width: double.infinity,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                          Expanded(
-                                            child: Center(
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.symmetric(
-                                                        horizontal: 8),
-                                                child: Text(
-                                                  recipe['name'] ??
-                                                      'Unnamed Recipe',
-                                                  textAlign: TextAlign.center,
-                                                  style: const TextStyle(
-                                                    fontSize: 14,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontFamily: 'Inter',
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
+                        expandedCategories[categoryName] == true
+                            ? GridView.builder(
+                                shrinkWrap: true,
+                                physics: const NeverScrollableScrollPhysics(),
+                                gridDelegate:
+                                    const SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 3,
+                                  crossAxisSpacing: 10,
+                                  mainAxisSpacing: 10,
+                                  childAspectRatio: 110 / 152,
+                                ),
+                                itemCount: recipes.length,
+                                itemBuilder: (context, recipeIndex) {
+                                  final recipe = recipes[recipeIndex];
+                                  return _buildRecipeCard(recipe);
+                                },
+                              )
+                            : SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  children: recipes.map((recipe) {
+                                    return Padding(
+                                      padding: const EdgeInsets.only(right: 10),
+                                      child: _buildRecipeCard(recipe),
+                                    );
+                                  }).toList(),
                                 ),
                               ),
-                            );
-                          },
-                        ),
+                      const SizedBox(height: 20),
                     ],
                   );
                 },
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildRecipeCard(Map<String, dynamic> recipe) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => RecipeDetailsScreen(recipe: recipe),
+          ),
+        );
+      },
+      child: SizedBox(
+        height: 152,
+        width: 114,
+        child: Card(
+          color: const Color(0xFFE0E0E0),
+          elevation: 2,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Stack(
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ClipRRect(
+                    borderRadius: const BorderRadius.vertical(
+                      top: Radius.circular(10),
+                    ),
+                    child: Image.asset(
+                      recipe['image'] ?? '',
+                      height: 112,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: Text(
+                          recipe['name'] ?? 'Unnamed Recipe',
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Inter',
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

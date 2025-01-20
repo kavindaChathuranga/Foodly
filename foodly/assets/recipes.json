@@ -34,7 +34,7 @@
     "Stir in garam masala and cook for another 2 minutes.",
     "Garnish with chopped cilantro and serve hot with rice or flatbread."
   ],
-    "category": "Main"
+    "category": "Main Meals"
   },
   {
     "id": 13,
@@ -67,7 +67,7 @@
     "Remove the bay leaf and adjust the seasoning with more salt, pepper, or lemon juice if desired.",
     "Serve hot, garnished with fresh parsley."
   ],
-    "category": "Soup"
+    "category": "Soups & Stews"
   },
 
   {
@@ -108,7 +108,7 @@
     "Drizzle the saffron milk on top and cover with a tight lid. Cook on low heat (dum) for 20-25 minutes.",
     "Garnish with the reserved fried onions and serve hot with raita."
   ],
-    "category": "Main"
+    "category": "Main Meals"
   },
   {
     "id": 17,
@@ -134,7 +134,7 @@
     "Pour the cooled black tea into the glass, followed by the milk. Stir well.",
     "Serve immediately with a wide straw to enjoy the pearls!"
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
 
   {
@@ -168,7 +168,7 @@
     "Squeeze lemon juice over the pasta and garnish with fresh cilantro leaves. If desired, sprinkle with mozzarella cheese for extra creaminess.",
     "Serve hot and enjoy!"
   ],
-    "category": "Main"
+    "category": "Main Meals"
   },
   {
     "id": 14,
@@ -204,7 +204,7 @@
     "Once cooked, taste and adjust the seasoning if needed. Add the green chili for extra spice if desired.",
     "Serve hot, garnished with fresh coriander leaves and a squeeze of lemon juice."
   ],
-    "category": "Soup"
+    "category": "Soups & Stews"
   },
 
   {
@@ -242,7 +242,7 @@
     "Cover with aluminum foil and bake for 25 minutes. Remove foil and bake for an additional 25 minutes, until cheese is bubbly and golden brown.",
     "Let it cool for 10 minutes before slicing. Serve hot and enjoy!"
   ],
-    "category": "Main"
+    "category": "Main Meals"
   },
   {
     "id": 8,
@@ -276,7 +276,7 @@
     "Taste and adjust seasoning with more salt and pepper if needed.",
     "Stir in fresh parsley and serve hot."
   ],
-    "category": "Soup"
+    "category": "Soups & Stews"
   },
   {
     "id": 23,
@@ -300,7 +300,7 @@
     "Taste and adjust sweetness, adding more honey or syrup if needed.",
     "Pour into a glass and serve immediately."
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
 
   {
@@ -335,7 +335,7 @@
     "Taste and adjust seasoning with more salt and pepper if needed.",
     "Garnish with fresh parsley and serve hot."
   ],
-    "category": "Soup"
+    "category": "Soups & Stews"
   },
   {
     "id": 4,
@@ -366,7 +366,7 @@
     "If desired, transfer the mac and cheese to a baking dish, sprinkle breadcrumbs on top, and broil for 3-5 minutes until golden brown.",
     "Serve hot and enjoy!"
   ],
-    "category": "Main"
+    "category": "Main Meals"
   },
   {
     "id": 29,
@@ -397,7 +397,7 @@
     "Heat oil in a frying pan over medium heat and fry the cutlets until golden brown on both sides, about 3-4 minutes per side.",
     "Drain on paper towels and serve hot."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
 
   {
@@ -433,7 +433,7 @@
     "Remove the bay leaf and adjust the seasoning with more salt, pepper, or Worcestershire sauce if desired.",
     "Serve hot, garnished with fresh parsley."
   ],
-    "category": "Soup"
+    "category": "Soups & Stews"
   },
   
   {
@@ -466,7 +466,7 @@
     "Remove from the oil and drain on paper towels.",
     "Serve hot with a dipping sauce of your choice, such as sweet chili sauce or soy sauce."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   {
     "id": 12,
@@ -496,7 +496,7 @@
     "Taste and adjust seasoning as needed.",
     "Serve hot, garnished with fresh basil leaves and croutons or bread on the side."
   ],
-    "category": "Soup"
+    "category": "Soups & Stews"
   },
   {
     "id": 2,
@@ -526,7 +526,7 @@
     "Season with salt and pepper to taste and stir-fry for 2-3 minutes.",
     "Serve hot and enjoy!"
   ],
-    "category": "Main"
+    "category": "Main Meals"
   },
   {
     "id": 26,
@@ -553,7 +553,7 @@
     "Once cooked, remove the chicken from the heat and let it rest for a few minutes.",
     "Garnish with chopped parsley and serve hot."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   {
     "id": 15,
@@ -575,7 +575,7 @@
     "Pour into a glass and serve immediately.",
     "Optional: Garnish with a sprinkle of chia seeds, a mint leaf, or a drizzle of honey."
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 7,
@@ -606,7 +606,7 @@
     "Garnish with fresh cilantro or parsley if desired.",
     "Serve hot with your favorite sides and enjoy!"
   ],
-    "category": "Main"
+    "category": "Main Meals"
   },
   {
     "id": 27,
@@ -634,7 +634,7 @@
     "Fry the cutlets for 3-4 minutes on each side, until golden brown and crispy. Remove from the pan and drain on paper towels.",
     "Serve immediately with lemon wedges and garnish with fresh parsley, if desired."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   {
     "id": 16,
@@ -664,7 +664,7 @@
     "Garnish with chopped nuts, tutti-frutti, and a drizzle of sweetened condensed milk (if using).",
     "Serve immediately with a straw and spoon!"
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 18,
@@ -687,7 +687,7 @@
     "Pour into a glass and serve immediately.",
     "Optional: Garnish with a few whole grapes or a mint leaf."
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 36,
@@ -715,7 +715,7 @@
     "Air fry the tuna cakes for 10-12 minutes, flipping them halfway through the cooking time, until they are golden brown and crispy.",
     "Serve hot with a dipping sauce of your choice or on a bun for a tuna burger."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   {
     "id": 19,
@@ -738,7 +738,7 @@
     "Drizzle additional caramel sauce on top.",
     "Stir before drinking and serve with a straw."
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 11,
@@ -772,7 +772,38 @@
     "Taste and adjust seasoning with more salt or pepper if needed.",
     "Serve hot, garnished with fresh parsley or green onions if desired."
   ],
-    "category": "Soup"
+    "category": "Soups & Stews"
+  },
+  {
+    "id": 35,
+    "name": "Crispy Buffalo Wings",
+    "time": "40 m",
+    "image": "assets/images/bites/crispy-buffalo-wings.jpg",
+    "ingredients": [
+    "1 kg chicken wings, cut into drumettes and flats",
+    "1 cup all-purpose flour",
+    "1 teaspoon paprika",
+    "1 teaspoon garlic powder",
+    "1 teaspoon onion powder",
+    "1 teaspoon salt",
+    "1/2 teaspoon black pepper",
+    "1/4 teaspoon cayenne pepper (optional, for extra heat)",
+    "Oil for frying",
+    "1/2 cup unsalted butter, melted",
+    "1/2 cup hot sauce (like Frank's RedHot)",
+    "1 tablespoon honey (optional)"
+  ],
+  "instructions": [
+    "Rinse and pat dry the chicken wings with paper towels.",
+    "In a large bowl, mix flour, paprika, garlic powder, onion powder, salt, black pepper, and cayenne pepper.",
+    "Coat the chicken wings evenly with the flour mixture. Shake off excess flour and place them on a tray. Let them rest for 15 minutes to allow the coating to stick.",
+    "Heat oil in a deep fryer or large pot to 175°C (350°F).",
+    "Fry the chicken wings in batches until golden brown and crispy, about 10-12 minutes per batch. Drain on paper towels.",
+    "In a separate bowl, whisk together melted butter, hot sauce, and honey (if using) to make the buffalo sauce.",
+    "Toss the fried chicken wings in the buffalo sauce until well coated.",
+    "Serve immediately with ranch or blue cheese dressing and celery sticks."
+  ],
+    "category": "Starters & Bites"
   },
   {
     "id": 20,
@@ -796,7 +827,7 @@
     "Optional: Garnish with chopped nuts or a small mango slice on the rim.",
     "Serve immediately and enjoy your creamy mango milkshake!"
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 21,
@@ -818,7 +849,7 @@
     "Taste and adjust sweetness by adding more honey or syrup if desired.",
     "Pour into a glass and serve immediately."
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 31,
@@ -850,7 +881,7 @@
     "Once cooked, remove the chicken from the grill and let it rest for a few minutes before slicing it into thin strips.",
     "Serve the chicken shawarma in pita bread or flatbreads, topped with tahini or garlic sauce, fresh vegetables, and a sprinkle of parsley, if desired."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   {
     "id": 22,
@@ -870,7 +901,7 @@
     "Taste and adjust sweetness, adding more honey or sugar if needed.",
     "Pour into a glass and serve chilled."
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 37,
@@ -899,7 +930,7 @@
     "Remove from the oil and drain on paper towels.",
     "Serve hot with your favorite dipping sauce such as ketchup, BBQ sauce, or honey mustard."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   {
     "id": 24,
@@ -921,7 +952,7 @@
     "Taste and adjust sweetness by adding more honey or syrup if desired.",
     "Pour into a glass and serve immediately."
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 33,
@@ -950,7 +981,7 @@
     "Once fried, transfer the wings to the prepared baking sheet or wire rack and bake in the preheated oven for an additional 10-15 minutes to ensure they're cooked through and extra crispy.",
     "Serve hot with your favorite dipping sauce (e.g., ranch, blue cheese, or buffalo sauce)."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   {
     "id": 32,
@@ -979,7 +1010,7 @@
     "Remove from the oil and drain on paper towels.",
     "Serve hot with a dipping sauce of your choice (e.g., sweet chili sauce, soy sauce, or peanut sauce)."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   {
     "id": 25,
@@ -1000,7 +1031,7 @@
     "Top with the remaining foam and optionally add sweetener and garnish with a sprinkle of cinnamon or cocoa powder.",
     "Serve hot and enjoy!"
   ],
-    "category": "Smoothies"
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 28,
@@ -1028,7 +1059,7 @@
     "Remove the patties from the skillet and drain on paper towels.",
     "Serve the chicken patties on a bed of lettuce or in sandwich buns, if desired."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   },
   
   {
@@ -1057,7 +1088,7 @@
     "Grill the chicken for 6-7 minutes per side, or until the internal temperature reaches 165°F (75°C) and the chicken is fully cooked.",
     "Serve hot and enjoy with your favorite sides or in a salad."
   ],
-    "category": "Bites"
+    "category": "Starters & Bites"
   }
   
   

@@ -66,6 +66,7 @@ flutter:
     - assets/favorites.svg
     - assets/categories.svg
     - assets/home.svg
+    - assets/back-button.svg
     - assets/images/
     - assets/images/soup/
     - assets/images/smoothies/
