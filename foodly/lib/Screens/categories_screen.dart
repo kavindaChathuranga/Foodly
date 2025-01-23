@@ -166,7 +166,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       },
       child: SizedBox(
         height: 152,
-        width: 114,
+        width: 130,
         child: Card(
           color: const Color(0xFFE0E0E0),
           elevation: 2,
@@ -206,6 +206,36 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     ),
                   ),
                 ],
+              ),
+              Positioned(
+                top: 8,
+                right: 2,
+                child: Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFFF4B3E),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.timer,
+                        size: 14,
+                        color: Colors.white,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        recipe['time'],
+                        style: const TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
