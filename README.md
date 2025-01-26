@@ -50,6 +50,10 @@ A delightful Android application developed using **Flutter** and **Dart** techno
     flutter build apk
     ```
 
-Screenshots
+### Screenshots
 Here are some interface screenshots of the app:
 <p align="center"> <img src="./demonstration/screenshots/home.png" alt="Home Screen" width="25%" height="25%" /> <img src="./demonstration/screenshots/categories.png" alt="Recipe Details" width="25%" height="25%" /> <img src="./demonstration/screenshots/favorites.png" alt="Favorites" width="25%" height="25%" /> </p>
+
+### Demonstration
+Here's a short demonstration of the app:
+<p align="center"> <a href="https://youtu.be/ix8vhLV0cF4"> <img src="./demonstration/screenshots/demo_thumbnail.png" alt="App Demo" width="50%" height="50%" /> </a> </p>
