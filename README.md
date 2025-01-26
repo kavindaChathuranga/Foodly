@@ -1,4 +1,4 @@
-<p align="center"> <img src="./demonstration/screenshots/Black_Titanium.png" alt="Home Screen" width="50%" height="50%" />
+<p align="center"> <img src="./demonstration/screenshots/Black_Titanium.png" alt="Home Screen" width="45%" height="45%" />
 <h1 align="center">Foodly App </h1>
 
 A delightful Android application developed using **Flutter** and **Dart** technologies. This app helps users find, save, and follow their favorite recipes. Foodly offers a user-friendly interface for a seamless and enjoyable cooking experience.
