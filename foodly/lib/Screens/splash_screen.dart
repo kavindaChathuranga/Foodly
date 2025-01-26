@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:path_provider/path_provider.dart';
+import 'dart:io';
+import 'dart:convert';
 import 'package:foodly/Screens/home.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,6 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     _startAnimation();
+    _copyJsonFile(); // Copy JSON file when splash screen loads
   }
 
   void _startAnimation() async {
@@ -41,6 +46,23 @@ class _SplashScreenState extends State<SplashScreen> {
       context,
       MaterialPageRoute(builder: (context) => const FoodlyApp()),
     );
+  }
+
+  // Function to copy the JSON file from assets to the writable directory
+  Future<void> _copyJsonFile() async {
+    final directory = await getApplicationDocumentsDirectory();
+    final filePath = '${directory.path}/recipes.json';
+
+    // Check if the file already exists
+    final file = File(filePath);
+    if (!await file.exists()) {
+      // Load the file from assets
+      final ByteData data = await rootBundle.load('assets/recipes.json');
+      final buffer = data.buffer.asUint8List();
+
+      // Write the data to the app's writable directory
+      await file.writeAsBytes(buffer);
+    }
   }
 
   @override
