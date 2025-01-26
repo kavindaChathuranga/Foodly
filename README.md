@@ -3,7 +3,7 @@
 
 A delightful Android application developed using **Flutter** and **Dart** technologies. This app helps users find, save, and follow their favorite recipes. Foodly offers a user-friendly interface for a seamless and enjoyable cooking experience.
 
----
+
 
 ## Features
 
@@ -52,9 +52,4 @@ A delightful Android application developed using **Flutter** and **Dart** techno
 
 Screenshots
 Here are some interface screenshots of the app:
-
-<p align="center"> <img src="./demonstration/screenshots/home.png" alt="Home Screen" width="50%" height="50%" /> </p> Home Screen: Browse through a variety of delicious recipes.
-
-<p align="center"> <img src="./demonstration/screenshots/categories.png" alt="Recipe Details" width="50%" height="50%" /> </p> Recipe Details Screen: Detailed view of each recipe with ingredients, cooking time, and instructions.
-
-<p align="center"> <img src="./demonstration/screenshots/favorites.png" alt="Favorites" width="50%" height="50%" /> </p> Favorites Screen: Quickly access your marked favorite recipes.
+<p align="center"> <img src="./demonstration/screenshots/home.png" alt="Home Screen" width="25%" height="25%" /> <img src="./demonstration/screenshots/categories.png" alt="Recipe Details" width="25%" height="25%" /> <img src="./demonstration/screenshots/favorites.png" alt="Favorites" width="25%" height="25%" /> </p>
