@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart'; // For loading assets
 
@@ -22,7 +23,8 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
   @override
   void initState() {
     super.initState();
-    isFavorite = widget.recipe['isFavorite'] ?? false; // Initialize isFavorite here
+    isFavorite =
+        widget.recipe['isFavorite'] ?? false; // Initialize isFavorite here
     _loadRecipes();
   }
 
@@ -57,7 +59,7 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
   // Function to get the favorite status of the current recipe
   bool _getFavoriteStatus() {
     final recipe = recipes.firstWhere(
-          (r) => r['name'] == widget.recipe['name'],
+      (r) => r['name'] == widget.recipe['name'],
       orElse: () => widget.recipe,
     );
     return recipe['isFavorite'] ?? false;
@@ -96,6 +98,15 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFFFF4B3E),
+        leading: IconButton(
+          icon: SvgPicture.asset(
+            'assets/back-button.svg',
+            color: Colors.white,
+            width: 24,
+            height: 24,
+          ),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -105,24 +116,44 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
             children: [
               Stack(
                 children: [
-                  Image.asset(
-                    widget.recipe['image'],
-                    width: MediaQuery.of(context).size.width, // Full width
-                    fit: BoxFit.cover, // Optional: adjust to cover the space
+                  ClipRRect(
+                    borderRadius:
+                        BorderRadius.circular(18.0), // Apply rounded corners
+                    child: Image.asset(
+                      widget.recipe['image'],
+                      // width: MediaQuery.of(context).size.width, // Full width
+                      width: 420,
+                      height: 200, // Set height to 200
+                      fit: BoxFit.cover, // Ensures the image covers the space
+                    ),
                   ),
                   Positioned(
                     top: 10,
                     right: 10,
                     child: Container(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 6.0, horizontal: 12.0),
-                      color: Colors.black.withOpacity(0.6),
-                      child: Text(
-                        widget.recipe['time'],
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+                          vertical: 6, horizontal: 8),
+                      decoration: BoxDecoration(
+                        color: Color(0xFFFF4B3E),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.timer,
+                            size: 20,
+                            color: Colors.white,
+                          ),
+                          const SizedBox(width: 4),
+                          Text(
+                            widget.recipe['time'],
+                            style: const TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -130,20 +161,23 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
               ),
               const SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween, // Align name and favorite button
+                mainAxisAlignment: MainAxisAlignment
+                    .spaceBetween, // Align name and favorite button
                 children: [
                   Text(
                     widget.recipe['name'],
                     style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 27,
+                      fontWeight: FontWeight.w800,
                       fontFamily: 'Inter',
+                      color: Color(0xFF1A1A1A),
                     ),
                   ),
                   IconButton(
                     icon: Icon(
                       isFavorite ? Icons.favorite : Icons.favorite_border,
                       color: const Color(0xFFFF4B3E),
+                      size: 34,
                     ),
                     onPressed: () {
                       setState(() {
@@ -157,28 +191,40 @@ class _RecipeDetailsScreenState extends State<RecipeDetailsScreen> {
               const SizedBox(height: 20),
               Text(
                 'Ingredients:',
-                style: Theme.of(context).textTheme.titleLarge, // Use titleLarge for display
+                style: TextStyle(
+                  fontSize: 22, // Optional: Set the font size
+                  fontWeight: FontWeight.bold, // Optional: Make it bold
+                  color: const Color(0xFFFF4B3E), // Set color to 0xFFFF4B3E
+                ),
               ),
               const SizedBox(height: 10),
               ...widget.recipe['ingredients'].map<Widget>((ingredient) {
-                return Text('• $ingredient');
+                return Text(
+                  '• $ingredient',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                );
               }).toList(),
               const SizedBox(height: 20),
               Text(
                 'Instructions:',
-                style: Theme.of(context).textTheme.titleLarge, // Use titleLarge for display
+                style: TextStyle(
+                  fontSize: 22, // Optional: Set the font size
+                  fontWeight: FontWeight.bold, // Optional: Make it bold
+                  color: const Color(0xFFFF4B3E), // Set color to 0xFFFF4B3E
+                ),
               ),
               const SizedBox(height: 10),
               ...widget.recipe['instructions'].map<Widget>((instruction) {
-                return Text('• $instruction');
+                return Text(
+                  '• $instruction',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                );
               }).toList(),
               const SizedBox(height: 20),
-              Row(
-                children: [
-                  const Text('Preparation Time: '),
-                  Text(widget.recipe['time']),
-                ],
-              ),
             ],
           ),
         ),

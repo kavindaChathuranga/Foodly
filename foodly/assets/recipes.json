@@ -2,106 +2,1094 @@
   {
     "id": 1,
     "name": "Chicken Curry",
-    "time": "50 m",
+    "time": "40 m",
     "image": "assets/images/Chicken_Curry.png",
-    "ingredients": ["Chicken", "Curry Powder", "Coconut Milk", "Spices"],
-    "instructions": [
-      "Marinate the chicken with spices and curry powder for 20 minutes.",
-      "Heat oil in a pan, sauté onions until golden.",
-      "Add marinated chicken and cook for 10 minutes.",
-      "Pour in coconut milk, mix well, and simmer for 20 minutes on low heat.",
-      "Garnish with fresh coriander and serve hot."
-    ],
-    "category": "Main Course"
+    "ingredients": [
+    "500g chicken (cut into pieces)",
+    "2 teaspoons curry powder",
+    "1 cup coconut milk",
+    "1 teaspoon turmeric powder",
+    "1 teaspoon red chili powder",
+    "2 teaspoons coriander powder",
+    "1 teaspoon garam masala",
+    "1/2 teaspoon cumin seeds",
+    "2 tablespoons vegetable oil",
+    "1 large onion (finely chopped)",
+    "3 garlic cloves (minced)",
+    "1-inch piece of ginger (grated)",
+    "2 medium tomatoes (finely chopped)",
+    "Salt (to taste)",
+    "Fresh cilantro (chopped, for garnish)"
+  ],
+  "instructions": [
+    "Heat the oil in a large pan over medium heat.",
+    "Add cumin seeds and let them sizzle for a few seconds.",
+    "Add chopped onions and sauté until golden brown.",
+    "Stir in garlic and ginger and cook for 1-2 minutes until fragrant.",
+    "Add chopped tomatoes and cook until they become soft and mushy.",
+    "Add curry powder, turmeric powder, chili powder, coriander powder, and salt. Mix well.",
+    "Add the chicken pieces and cook for 5-7 minutes until they are slightly browned.",
+    "Add coconut milk and bring it to a boil.",
+    "Cover and simmer on low heat for 20-25 minutes, stirring occasionally, until the chicken is tender and cooked through.",
+    "Stir in garam masala and cook for another 2 minutes.",
+    "Garnish with chopped cilantro and serve hot with rice or flatbread."
+  ],
+    "category": "Main Meals"
+  },
+  {
+    "id": 13,
+    "name": "Chicken Soup",
+    "time": "40 m",
+    "image": "assets/images/soup/beef-broth.jpg",
+    "ingredients": [
+    "2 tablespoons olive oil",
+    "1 onion, chopped",
+    "2 carrots, peeled and diced",
+    "2 celery stalks, diced",
+    "3 cloves garlic, minced",
+    "8 cups chicken broth",
+    "2 cups cooked chicken, shredded or diced",
+    "1 cup egg noodles or pasta",
+    "1 teaspoon dried thyme",
+    "1/2 teaspoon dried parsley",
+    "1 bay leaf",
+    "Salt to taste",
+    "Black pepper to taste",
+    "Juice of 1/2 lemon (optional)",
+    "Fresh parsley for garnish (optional)"
+  ],
+  "instructions": [
+    "In a large pot, heat olive oil over medium heat. Add onion, carrots, celery, and garlic. Sauté for 5-7 minutes until softened.",
+    "Pour in the chicken broth and bring to a boil.",
+    "Add the shredded chicken, thyme, parsley, bay leaf, salt, and black pepper. Stir well.",
+    "Reduce the heat to low and let the soup simmer for 15 minutes.",
+    "Add the egg noodles or pasta and cook for 8-10 minutes, or until tender.",
+    "Remove the bay leaf and adjust the seasoning with more salt, pepper, or lemon juice if desired.",
+    "Serve hot, garnished with fresh parsley."
+  ],
+    "category": "Soups & Stews"
+  },
+
+  {
+    "id": 3,
+    "name": "Chicken Biriyani",
+    "time": "60 m",
+    "image": "assets/images/Chicken_Biriyani.png",
+    "ingredients": [
+    "500g chicken (cut into pieces)",
+    "2 cups basmati rice (soaked for 30 minutes)",
+    "3 onions (thinly sliced)",
+    "2 tomatoes (chopped)",
+    "1 cup yogurt",
+    "2 teaspoons ginger-garlic paste",
+    "1/4 cup fresh coriander leaves (chopped)",
+    "1/4 cup fresh mint leaves (chopped)",
+    "4 green chilies (sliced)",
+    "2 teaspoons biryani masala powder",
+    "1 teaspoon turmeric powder",
+    "1 teaspoon red chili powder",
+    "4 tablespoons ghee or oil",
+    "2 bay leaves",
+    "4 cloves",
+    "4 cardamom pods",
+    "1 cinnamon stick",
+    "1/2 teaspoon saffron (soaked in warm milk)",
+    "Salt to taste",
+    "Water (for cooking)"
+  ],
+  "instructions": [
+    "Heat ghee or oil in a large pot and fry the sliced onions until golden brown. Remove half and set aside for garnish.",
+    "Add bay leaves, cloves, cardamom, and cinnamon to the pot and sauté for a few seconds.",
+    "Add ginger-garlic paste and green chilies, then sauté until aromatic.",
+    "Add chicken pieces, turmeric, chili powder, and biryani masala. Cook until the chicken is lightly browned.",
+    "Add chopped tomatoes and yogurt, and cook until the chicken is tender and the oil separates.",
+    "In another pot, boil water with salt and cook the soaked basmati rice until 70% cooked. Drain and set aside.",
+    "Layer the chicken mixture, cooked rice, mint, and coriander in the pot. Repeat layers as needed.",
+    "Drizzle the saffron milk on top and cover with a tight lid. Cook on low heat (dum) for 20-25 minutes.",
+    "Garnish with the reserved fried onions and serve hot with raita."
+  ],
+    "category": "Main Meals"
+  },
+  {
+    "id": 17,
+    "name": "Boba Tea",
+    "time": "30 m",
+    "image": "assets/images/smoothies/boba_tea.jpg",
+    "ingredients": [
+    "1/2 cup tapioca pearls",
+    "4 cups water",
+    "2 cups black tea, brewed and cooled",
+    "1/2 cup milk (dairy or plant-based)",
+    "2-3 tablespoons sugar or sweetener (adjust to taste)",
+    "1/2 cup ice cubes",
+    "1 tablespoon brown sugar syrup (optional, for coating pearls)"
+  ],
+  "instructions": [
+    "In a medium pot, bring 4 cups of water to a boil. Add the tapioca pearls and cook according to the package instructions (typically 10-15 minutes). Stir occasionally to prevent sticking.",
+    "Once the pearls are cooked and chewy, drain and rinse them under cold water.",
+    "Optional: Toss the pearls with brown sugar syrup for added sweetness and flavor.",
+    "Brew 2 cups of black tea and let it cool to room temperature. Sweeten with sugar or your preferred sweetener while the tea is warm.",
+    "In a glass, add 2-3 tablespoons of cooked tapioca pearls.",
+    "Fill the glass halfway with ice cubes.",
+    "Pour the cooled black tea into the glass, followed by the milk. Stir well.",
+    "Serve immediately with a wide straw to enjoy the pearls!"
+  ],
+    "category": "Smoothies & Shakes"
+  },
+
+  {
+    "id": 5,
+    "name": "Tandoori Pasta",
+    "time": "35 m",
+    "image": "assets/images/tandoori-pasta.jpg",
+    "ingredients": [
+    "250g penne pasta",
+    "1 tablespoon olive oil",
+    "1 medium onion, finely chopped",
+    "2 cloves garlic, minced",
+    "1/2 cup tandoori sauce",
+    "1/2 cup tomato sauce",
+    "1/2 cup heavy cream",
+    "1/2 teaspoon garam masala",
+    "1/4 teaspoon chili powder",
+    "1/4 teaspoon turmeric",
+    "Salt to taste",
+    "Black pepper to taste",
+    "1/4 cup fresh cilantro leaves (for garnish)",
+    "1 tablespoon lemon juice",
+    "1/2 cup grated mozzarella cheese (optional)"
+  ],
+  "instructions": [
+    "Cook the pasta in a large pot of salted boiling water according to package instructions. Drain and set aside.",
+    "In a large pan, heat olive oil over medium heat. Add chopped onions and sauté until soft and golden brown (about 5 minutes). Add minced garlic and sauté for another minute.",
+    "Stir in tandoori sauce, tomato sauce, garam masala, chili powder, turmeric, salt, and black pepper. Cook for 2-3 minutes to blend the flavors.",
+    "Reduce heat to low and stir in heavy cream. Cook for another 2 minutes until the sauce thickens slightly.",
+    "Add the cooked pasta to the sauce, tossing it to coat well. Adjust the seasoning with salt and pepper as needed.",
+    "Squeeze lemon juice over the pasta and garnish with fresh cilantro leaves. If desired, sprinkle with mozzarella cheese for extra creaminess.",
+    "Serve hot and enjoy!"
+  ],
+    "category": "Main Meals"
+  },
+  {
+    "id": 14,
+    "name": "Mutton Soup",
+    "time": "90 m",
+    "image": "assets/images/soup/vegetable-soup1.jpg",
+    "ingredients": [
+    "500g mutton (with bones), cut into pieces",
+    "2 tablespoons oil or ghee",
+    "1 onion, chopped",
+    "2 tomatoes, chopped",
+    "2 cloves garlic, minced",
+    "1-inch piece of ginger, minced",
+    "1/2 teaspoon turmeric powder",
+    "1 teaspoon cumin powder",
+    "1 teaspoon coriander powder",
+    "1/2 teaspoon garam masala",
+    "1/4 teaspoon black pepper powder",
+    "6 cups water or mutton stock",
+    "Salt to taste",
+    "2 tablespoons chopped fresh coriander leaves (for garnish)",
+    "1 green chili, slit (optional)",
+    "Juice of 1/2 lemon (optional)"
+  ],
+  "instructions": [
+    "Heat oil or ghee in a large pot over medium heat. Add the chopped onion and sauté until golden brown.",
+    "Add garlic and ginger, and sauté for 2-3 minutes until aromatic.",
+    "Add the mutton pieces and cook for 5-7 minutes until browned.",
+    "Stir in the turmeric powder, cumin powder, coriander powder, garam masala, and black pepper powder. Cook for another 2 minutes.",
+    "Add the chopped tomatoes and cook until they become soft and mushy.",
+    "Pour in the water or mutton stock. Add salt and stir well.",
+    "Cover the pot and let the soup simmer on low heat for 1 to 1.5 hours, or until the mutton becomes tender.",
+    "Once cooked, taste and adjust the seasoning if needed. Add the green chili for extra spice if desired.",
+    "Serve hot, garnished with fresh coriander leaves and a squeeze of lemon juice."
+  ],
+    "category": "Soups & Stews"
+  },
+
+  {
+    "id": 6,
+    "name": "Cheesy Lasagna",
+    "time": "75 m",
+    "image": "assets/images/Lasagna.jpg",
+    "ingredients": [
+    "12 lasagna noodles",
+    "1 lb ground beef",
+    "1 onion, chopped",
+    "2 cloves garlic, minced",
+    "1 (24 oz) jar marinara sauce",
+    "2 cups ricotta cheese",
+    "2 cups shredded mozzarella cheese",
+    "1/2 cup grated Parmesan cheese",
+    "1 large egg",
+    "2 tablespoons chopped fresh basil",
+    "1 tablespoon chopped fresh parsley",
+    "1/4 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/2 teaspoon dried oregano"
+  ],
+  "instructions": [
+    "Preheat oven to 375°F (190°C).",
+    "Cook lasagna noodles according to package instructions. Drain and set aside.",
+    "In a large pan, brown ground beef over medium heat. Add chopped onion and garlic, cooking until the onion softens.",
+    "Stir in marinara sauce and simmer for 10 minutes. Season with salt, pepper, and oregano. Set aside.",
+    "In a mixing bowl, combine ricotta cheese, egg, 1 cup mozzarella, Parmesan, basil, parsley, salt, and pepper.",
+    "In a 9x13-inch baking dish, spread a thin layer of the meat sauce at the bottom.",
+    "Place a layer of cooked lasagna noodles on top of the sauce.",
+    "Spread a layer of the ricotta mixture on top of the noodles, followed by a layer of meat sauce.",
+    "Repeat layering noodles, ricotta mixture, and meat sauce until all ingredients are used, finishing with a layer of meat sauce.",
+    "Top with remaining mozzarella cheese and a sprinkle of Parmesan.",
+    "Cover with aluminum foil and bake for 25 minutes. Remove foil and bake for an additional 25 minutes, until cheese is bubbly and golden brown.",
+    "Let it cool for 10 minutes before slicing. Serve hot and enjoy!"
+  ],
+    "category": "Main Meals"
+  },
+  {
+    "id": 8,
+    "name": "Vegetable Soup",
+    "time": "40 m",
+    "image": "assets/images/soup/vegetable-soup.jpg",
+    "ingredients": [
+    "2 tablespoons olive oil",
+    "1 onion, chopped",
+    "2 carrots, peeled and diced",
+    "2 celery stalks, diced",
+    "2 cloves garlic, minced",
+    "1 zucchini, diced",
+    "1 cup green beans, chopped",
+    "1 potato, peeled and diced",
+    "1 can (14.5 oz) diced tomatoes",
+    "4 cups vegetable broth",
+    "1 teaspoon dried thyme",
+    "1/2 teaspoon dried basil",
+    "Salt to taste",
+    "Black pepper to taste",
+    "1 cup frozen peas",
+    "1 cup corn kernels",
+    "1/4 cup chopped fresh parsley"
+  ],
+  "instructions": [
+    "In a large pot, heat olive oil over medium heat. Add chopped onion, carrots, celery, and garlic. Sauté for 5-7 minutes until vegetables are softened.",
+    "Add zucchini, green beans, and potato. Stir to combine and cook for another 3-4 minutes.",
+    "Add diced tomatoes, vegetable broth, thyme, basil, salt, and pepper. Stir well, bring to a boil, then reduce heat to low and simmer for 15-20 minutes, until vegetables are tender.",
+    "Add frozen peas and corn to the soup. Continue simmering for an additional 5-7 minutes until the peas and corn are heated through.",
+    "Taste and adjust seasoning with more salt and pepper if needed.",
+    "Stir in fresh parsley and serve hot."
+  ],
+    "category": "Soups & Stews"
+  },
+  {
+    "id": 23,
+    "name": "Berry Smoothie",
+    "time": "5 m",
+    "image": "assets/images/smoothies/berry_smoothie.jpg",
+    "ingredients": [
+    "1/2 cup strawberries, hulled",
+    "1/2 cup blueberries",
+    "1/2 cup raspberries",
+    "1/2 cup blackberries",
+    "1/2 cup yogurt (plain or vanilla)",
+    "1/2 cup milk (dairy or plant-based)",
+    "1 tablespoon honey or maple syrup (optional, for sweetness)",
+    "1/2 cup ice cubes"
+  ],
+  "instructions": [
+    "Wash all the berries thoroughly.",
+    "Add the berries, yogurt, milk, honey or maple syrup (if using), and ice cubes to a blender.",
+    "Blend until smooth and creamy.",
+    "Taste and adjust sweetness, adding more honey or syrup if needed.",
+    "Pour into a glass and serve immediately."
+  ],
+    "category": "Smoothies & Shakes"
+  },
+
+  {
+    "id": 9,
+    "name": "Root Vegetable Soup",
+    "time": "60 m",
+    "image": "assets/images/soup/RootVege.jpg",
+    "ingredients": [
+    "2 tablespoons olive oil",
+    "1 onion, chopped",
+    "2 carrots, peeled and diced",
+    "2 parsnips, peeled and diced",
+    "1 sweet potato, peeled and diced",
+    "1 turnip, peeled and diced",
+    "3 cloves garlic, minced",
+    "4 cups vegetable broth",
+    "1/2 teaspoon dried thyme",
+    "1/2 teaspoon dried rosemary",
+    "1 bay leaf",
+    "Salt to taste",
+    "Black pepper to taste",
+    "1/2 cup coconut milk or cream (optional, for creaminess)",
+    "Fresh parsley for garnish (optional)"
+  ],
+  "instructions": [
+    "In a large pot, heat olive oil over medium heat. Add chopped onion and garlic, and sauté for 5-7 minutes until softened.",
+    "Add carrots, parsnips, sweet potato, and turnip to the pot. Stir well to combine and cook for another 5 minutes.",
+    "Add vegetable broth, thyme, rosemary, bay leaf, salt, and pepper. Stir to combine and bring to a boil.",
+    "Reduce heat to low and simmer for 30-40 minutes, until the root vegetables are tender.",
+    "Remove the bay leaf, then use an immersion blender to puree the soup until smooth. Alternatively, transfer the soup in batches to a regular blender.",
+    "If desired, stir in coconut milk or cream for a creamy texture.",
+    "Taste and adjust seasoning with more salt and pepper if needed.",
+    "Garnish with fresh parsley and serve hot."
+  ],
+    "category": "Soups & Stews"
+  },
+  {
+    "id": 4,
+    "name": "Mac and Cheese",
+    "time": "40 m",
+    "image": "assets/images/Mac_and_Cheese.png",
+    "ingredients": [
+    "250g elbow macaroni",
+    "2 tablespoons butter",
+    "2 tablespoons all-purpose flour",
+    "2 cups milk (warm)",
+    "1 cup cheddar cheese (grated)",
+    "1/2 cup mozzarella cheese (grated)",
+    "1/4 teaspoon garlic powder",
+    "1/4 teaspoon mustard powder",
+    "Salt to taste",
+    "Black pepper to taste",
+    "2 tablespoons breadcrumbs (optional, for topping)"
+  ],
+  "instructions": [
+    "Cook the macaroni in a large pot of salted boiling water according to package instructions. Drain and set aside.",
+    "In a large saucepan, melt the butter over medium heat.",
+    "Whisk in the flour and cook for 1-2 minutes until it forms a paste (roux).",
+    "Gradually add the warm milk, whisking constantly to avoid lumps. Cook until the mixture thickens.",
+    "Stir in the garlic powder, mustard powder, salt, and black pepper.",
+    "Lower the heat and add the cheddar and mozzarella cheese. Stir until the cheese is completely melted and the sauce is smooth.",
+    "Add the cooked macaroni to the cheese sauce and stir until well coated.",
+    "If desired, transfer the mac and cheese to a baking dish, sprinkle breadcrumbs on top, and broil for 3-5 minutes until golden brown.",
+    "Serve hot and enjoy!"
+  ],
+    "category": "Main Meals"
+  },
+  {
+    "id": 29,
+    "name": "Fish Cutlets",
+    "time": "45 m",
+    "image": "assets/images/bites/fish-cutlet.jpg",
+    "ingredients": [
+    "500g boneless fish fillets (such as tuna or mackerel)",
+    "1 medium onion, finely chopped",
+    "2 cloves garlic, minced",
+    "1/4 cup boiled and mashed potatoes",
+    "1/4 cup breadcrumbs",
+    "1 tablespoon curry powder",
+    "1/2 teaspoon chili powder",
+    "1/4 teaspoon turmeric powder",
+    "1 tablespoon fresh cilantro, chopped",
+    "1 egg",
+    "Salt and pepper to taste",
+    "Oil for frying"
+  ],
+  "instructions": [
+    "Cook the fish fillets by steaming or boiling until fully cooked. Flake the fish into small pieces.",
+    "In a pan, heat a bit of oil and sauté onions and garlic until softened and golden brown.",
+    "Add curry powder, chili powder, turmeric powder, salt, and pepper to the onions and garlic, and cook for another 1-2 minutes.",
+    "Combine the cooked fish, mashed potatoes, sautéed onion mixture, breadcrumbs, and fresh cilantro in a bowl.",
+    "Form the mixture into small cutlets or patties.",
+    "Beat the egg in a separate bowl and dip the fish cutlets in the egg, then coat them with breadcrumbs.",
+    "Heat oil in a frying pan over medium heat and fry the cutlets until golden brown on both sides, about 3-4 minutes per side.",
+    "Drain on paper towels and serve hot."
+  ],
+    "category": "Starters & Bites"
+  },
+
+  {
+    "id": 10,
+    "name": "Beef Soup",
+    "time": "100 m",
+    "image": "assets/images/soup/Vegetable-beef-soup.jpg",
+    "ingredients": [
+    "1 lb beef stew meat (chuck or brisket), cut into cubes",
+    "2 tablespoons olive oil",
+    "1 onion, chopped",
+    "2 carrots, peeled and diced",
+    "2 celery stalks, diced",
+    "2 cloves garlic, minced",
+    "4 cups beef broth",
+    "1 can (14.5 oz) diced tomatoes",
+    "1/2 cup frozen peas",
+    "1/2 cup green beans, chopped",
+    "2 potatoes, peeled and diced",
+    "1 teaspoon dried thyme",
+    "1/2 teaspoon dried rosemary",
+    "1 bay leaf",
+    "Salt to taste",
+    "Black pepper to taste",
+    "1 tablespoon Worcestershire sauce (optional)",
+    "Fresh parsley for garnish (optional)"
+  ],
+  "instructions": [
+    "In a large pot, heat olive oil over medium-high heat. Brown the beef cubes in batches, turning until all sides are browned. Remove and set aside.",
+    "In the same pot, add chopped onion, carrots, celery, and garlic. Sauté for 5-7 minutes until softened.",
+    "Return the browned beef to the pot. Add beef broth, diced tomatoes, peas, green beans, potatoes, thyme, rosemary, bay leaf, salt, and pepper.",
+    "Bring to a boil, then reduce heat to low and simmer, covered, for 1.5-2 hours, or until the beef and vegetables are tender.",
+    "Remove the bay leaf and adjust the seasoning with more salt, pepper, or Worcestershire sauce if desired.",
+    "Serve hot, garnished with fresh parsley."
+  ],
+    "category": "Soups & Stews"
+  },
+  
+  {
+    "id": 34,
+    "name": "Pork Spring Rolls",
+    "time": "45 m",
+    "image": "assets/images/bites/Pork-Vegetable-Spring-Rolls.jpg",
+    "ingredients": [
+    "200g ground pork",
+    "10-12 spring roll wrappers",
+    "1/2 cup cabbage, thinly sliced",
+    "1/4 cup carrots, julienned",
+    "1/4 cup bell peppers, thinly sliced",
+    "1/4 cup mushrooms, sliced",
+    "1/4 cup green onions, chopped",
+    "2 cloves garlic, minced",
+    "1 tablespoon soy sauce",
+    "1 teaspoon sesame oil",
+    "1/4 teaspoon ground black pepper",
+    "Oil for frying"
+  ],
+  "instructions": [
+    "In a skillet, heat a little oil over medium heat. Add the ground pork and cook until browned, breaking it apart as it cooks.",
+    "Add the garlic to the skillet and sauté for another 1-2 minutes until fragrant.",
+    "In a large bowl, combine the cooked pork with the cabbage, carrots, bell peppers, mushrooms, and green onions.",
+    "Add soy sauce, sesame oil, and black pepper to the mixture, and toss everything together until well combined.",
+    "Place a spring roll wrapper on a clean surface with one corner facing you. Spoon about 2-3 tablespoons of the pork and vegetable mixture onto the wrapper.",
+    "Fold the bottom corner over the filling, then fold in the sides and roll tightly to seal the spring roll. Repeat with the remaining wrappers and filling.",
+    "Heat oil in a deep frying pan or wok over medium heat. Carefully add the spring rolls and fry for 4-5 minutes, turning occasionally until golden brown and crispy.",
+    "Remove from the oil and drain on paper towels.",
+    "Serve hot with a dipping sauce of your choice, such as sweet chili sauce or soy sauce."
+  ],
+    "category": "Starters & Bites"
+  },
+  {
+    "id": 12,
+    "name": "Tomato Soup",
+    "time": "30 m",
+    "image": "assets/images/soup/Tomatoe-soup.jpg",
+    "ingredients": [
+    "2 tablespoons olive oil",
+    "1 onion, chopped",
+    "2 cloves garlic, minced",
+    "4 large tomatoes, chopped",
+    "2 cups vegetable broth",
+    "1/4 cup heavy cream or coconut milk (optional)",
+    "1 teaspoon sugar",
+    "1/2 teaspoon dried basil",
+    "Salt to taste",
+    "Black pepper to taste",
+    "Fresh basil leaves for garnish (optional)",
+    "Croutons or bread for serving (optional)"
+  ],
+  "instructions": [
+    "In a large pot, heat olive oil over medium heat. Add the chopped onion and garlic, and sauté for 5-7 minutes until softened.",
+    "Add the chopped tomatoes and cook for another 5 minutes, stirring occasionally.",
+    "Pour in the vegetable broth and bring the mixture to a boil. Reduce heat and simmer for 15 minutes until the tomatoes are tender.",
+    "Use an immersion blender to puree the soup until smooth, or transfer the mixture to a blender in batches.",
+    "Return the soup to the pot and stir in the heavy cream or coconut milk, if using. Add sugar, dried basil, salt, and black pepper. Simmer for another 2-3 minutes.",
+    "Taste and adjust seasoning as needed.",
+    "Serve hot, garnished with fresh basil leaves and croutons or bread on the side."
+  ],
+    "category": "Soups & Stews"
   },
   {
     "id": 2,
     "name": "Pork Kottu",
     "time": "35 m",
     "image": "assets/images/Pork_Kottu.png",
-    "ingredients": ["Pork", "Roti", "Vegetables", "Spices"],
-    "instructions": [
-      "Cook pork in a pressure cooker with salt and pepper until tender.",
-      "Chop roti into thin strips.",
-      "Heat oil in a large pan, stir-fry vegetables with spices until aromatic.",
-      "Add cooked pork and roti strips to the pan and stir-fry for 5-10 minutes.",
-      "Serve with spicy curry sauce or chutney."
-    ],
-    "category": "Main Course"
+    "ingredients": [
+    "500g pork (cut into small pieces)",
+    "2 tablespoons soy sauce",
+    "2 teaspoons curry powder",
+    "1 teaspoon chili powder",
+    "1 onion (sliced)",
+    "2 green chilies (sliced)",
+    "1 carrot (shredded)",
+    "1 cup cabbage (shredded)",
+    "2 eggs (beaten)",
+    "3 cups paratha roti (chopped into pieces)",
+    "3 tablespoons oil",
+    "Salt and pepper to taste"
+  ],
+  "instructions": [
+    "Marinate the pork with soy sauce, curry powder, and chili powder. Set aside for 15 minutes.",
+    "Heat oil in a pan and fry the marinated pork until cooked. Remove and set aside.",
+    "In the same pan, add more oil if needed and sauté onions, green chilies, carrot, and cabbage until softened.",
+    "Push the vegetables to one side and scramble the beaten eggs on the other side of the pan.",
+    "Add the cooked pork and chopped paratha roti to the pan and mix everything together.",
+    "Season with salt and pepper to taste and stir-fry for 2-3 minutes.",
+    "Serve hot and enjoy!"
+  ],
+    "category": "Main Meals"
   },
   {
-    "id": 3,
-    "name": "Chicken Biriyani",
-    "time": "1.5 hr",
-    "image": "assets/images/Chicken_Biriyani.png",
-    "ingredients": ["Chicken", "Rice", "Yogurt", "Spices"],
-    "instructions": [
-      "Marinate chicken with yogurt, spices, and lemon juice for 30 minutes.",
-      "Cook rice with whole spices (like bay leaves, cardamom, and cloves) until 80% done.",
-      "In a large pot, layer the marinated chicken and rice alternately.",
-      "Cover and cook on low heat (dum) for 30-40 minutes.",
-      "Mix gently before serving and garnish with fried onions and raisins."
-    ],
-    "category": "Main Course"
+    "id": 26,
+    "name": "BBQ Chicken",
+    "time": "90 m",
+    "image": "assets/images/bites/BBQ-Chicken.jpg",
+    "ingredients": [
+    "4 chicken breasts or thighs",
+    "1/2 cup BBQ sauce (store-bought or homemade)",
+    "1 tablespoon olive oil",
+    "1 teaspoon garlic powder",
+    "1 teaspoon onion powder",
+    "1/2 teaspoon smoked paprika",
+    "1/4 teaspoon black pepper",
+    "1/4 teaspoon salt",
+    "1 tablespoon chopped fresh parsley (optional, for garnish)"
+  ],
+  "instructions": [
+    "Preheat your grill or oven to medium heat (350°F or 175°C).",
+    "In a small bowl, combine the garlic powder, onion powder, smoked paprika, salt, and black pepper.",
+    "Rub the chicken with olive oil and then coat it evenly with the spice mixture.",
+    "Place the chicken on the grill or in the oven and cook for 20-30 minutes, turning occasionally, until the chicken reaches an internal temperature of 165°F (75°C).",
+    "Brush the BBQ sauce onto the chicken during the last 5-10 minutes of cooking, allowing it to caramelize.",
+    "Once cooked, remove the chicken from the heat and let it rest for a few minutes.",
+    "Garnish with chopped parsley and serve hot."
+  ],
+    "category": "Starters & Bites"
   },
   {
-    "id": 4,
-    "name": "Mac and Cheese",
-    "time": "45 m",
-    "image": "assets/images/Mac_and_Cheese.png",
-    "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
-    "instructions": [
-      "Boil macaroni in salted water until al dente, then drain.",
-      "In a saucepan, melt butter, whisk in flour, and cook for 2 minutes.",
-      "Gradually add milk, stirring constantly until thickened.",
-      "Stir in shredded cheese until melted and creamy.",
-      "Combine macaroni with cheese sauce, transfer to a baking dish, and bake at 180°C (350°F) for 20 minutes until golden."
-    ],
-    "category": "Side Dish"
-  },
-  {
-    "id": 5,
-    "name": "Mac and Cheese-2",
-    "time": "45 m",
-    "image": "assets/images/Mac_and_Cheese.png",
-    "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
-    "instructions": [
-      "Boil macaroni in salted water until al dente, then drain.",
-      "In a saucepan, melt butter, whisk in flour, and cook for 2 minutes.",
-      "Gradually add milk, stirring constantly until thickened.",
-      "Stir in shredded cheese until melted and creamy.",
-      "Combine macaroni with cheese sauce, transfer to a baking dish, and bake at 180°C (350°F) for 20 minutes until golden."
-    ],
-    "category": "Side Dish"
-  },
-  {
-    "id": 6,
-    "name": "Mac and Cheese-2",
-    "time": "45 m",
-    "image": "assets/images/Mac_and_Cheese.png",
-    "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
-    "instructions": [
-      "Boil macaroni in salted water until al dente, then drain.",
-      "In a saucepan, melt butter, whisk in flour, and cook for 2 minutes.",
-      "Gradually add milk, stirring constantly until thickened.",
-      "Stir in shredded cheese until melted and creamy.",
-      "Combine macaroni with cheese sauce, transfer to a baking dish, and bake at 180°C (350°F) for 20 minutes until golden."
-    ],
-    "category": "Side Dish"
+    "id": 15,
+    "name": "Avocado Smoothie",
+    "time": "5 m",
+    "image": "assets/images/smoothies/avocado-smoothie.jpg",
+    "ingredients": [
+    "1 ripe avocado, peeled and pitted",
+    "1 cup milk (dairy or plant-based)",
+    "2 tablespoons honey or maple syrup",
+    "1/2 cup ice cubes",
+    "1/2 teaspoon vanilla extract (optional)",
+    "1 banana (optional, for extra creaminess)"
+  ],
+  "instructions": [
+    "Add the avocado, milk, honey or maple syrup, ice cubes, and vanilla extract (if using) to a blender.",
+    "Blend on high speed until the mixture is smooth and creamy.",
+    "Taste and adjust sweetness by adding more honey or maple syrup if desired.",
+    "Pour into a glass and serve immediately.",
+    "Optional: Garnish with a sprinkle of chia seeds, a mint leaf, or a drizzle of honey."
+  ],
+    "category": "Smoothies & Shakes"
   },
   {
     "id": 7,
-    "name": "Mac and Cheese-2",
+    "name": "BBQ Chicken Pizza",
     "time": "45 m",
-    "image": "assets/images/Mac_and_Cheese.png",
-    "ingredients": ["Macaroni", "Cheese", "Milk", "Butter"],
-    "instructions": [
-      "Boil macaroni in salted water until al dente, then drain.",
-      "In a saucepan, melt butter, whisk in flour, and cook for 2 minutes.",
-      "Gradually add milk, stirring constantly until thickened.",
-      "Stir in shredded cheese until melted and creamy.",
-      "Combine macaroni with cheese sauce, transfer to a baking dish, and bake at 180°C (350°F) for 20 minutes until golden."
-    ],
-    "category": "Side Dish-tem-2"
+    "image": "assets/images/Pizza.jpg",
+    "ingredients": [
+    "4 chicken breasts or thighs (bone-in or boneless)",
+    "1 tablespoon olive oil",
+    "Salt to taste",
+    "Black pepper to taste",
+    "1 teaspoon garlic powder",
+    "1 teaspoon onion powder",
+    "1 teaspoon paprika",
+    "1/2 teaspoon smoked paprika (optional)",
+    "1 cup BBQ sauce (store-bought or homemade)",
+    "1 tablespoon honey (optional, for extra sweetness)",
+    "1 tablespoon lemon juice (optional, for tanginess)",
+    "Fresh cilantro or parsley for garnish (optional)"
+  ],
+  "instructions": [
+    "Preheat the grill or oven to medium heat (350°F or 175°C).",
+    "Season the chicken with olive oil, salt, pepper, garlic powder, onion powder, paprika, and smoked paprika (if using).",
+    "Grill or bake the chicken: If grilling, cook for 5-7 minutes per side until the chicken reaches an internal temperature of 165°F (74°C). If baking, cook for 25-30 minutes in the preheated oven until the chicken is cooked through.",
+    "In the last 5 minutes of cooking, brush a layer of BBQ sauce on the chicken, then cook for an additional 2-3 minutes until the sauce has slightly caramelized.",
+    "For extra flavor, mix BBQ sauce with honey and lemon juice before brushing on the chicken.",
+    "Remove the chicken from the heat and let it rest for 5 minutes.",
+    "Garnish with fresh cilantro or parsley if desired.",
+    "Serve hot with your favorite sides and enjoy!"
+  ],
+    "category": "Main Meals"
+  },
+  {
+    "id": 27,
+    "name": "Beef Milanese",
+    "time": "30 m",
+    "image": "assets/images/bites/beef-milanese.jpg",
+    "ingredients": [
+    "4 beef cutlets (thinly pounded)",
+    "1/2 cup all-purpose flour",
+    "2 large eggs",
+    "1 cup breadcrumbs (preferably Italian-style)",
+    "1/4 cup grated Parmesan cheese",
+    "Salt and pepper to taste",
+    "1/2 teaspoon dried oregano",
+    "1/2 teaspoon garlic powder",
+    "1/4 cup olive oil (for frying)",
+    "Lemon wedges (for serving)",
+    "Fresh parsley (optional, for garnish)"
+  ],
+  "instructions": [
+    "Pound the beef cutlets to an even thickness, if not already done.",
+    "Set up three shallow bowls: one with flour, one with beaten eggs, and one with breadcrumbs mixed with Parmesan, oregano, garlic powder, salt, and pepper.",
+    "Dredge each beef cutlet in flour, then dip it into the egg, and coat it with the breadcrumb mixture, pressing gently to ensure an even coat.",
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Fry the cutlets for 3-4 minutes on each side, until golden brown and crispy. Remove from the pan and drain on paper towels.",
+    "Serve immediately with lemon wedges and garnish with fresh parsley, if desired."
+  ],
+    "category": "Starters & Bites"
+  },
+  {
+    "id": 16,
+    "name": "Falooda",
+    "time": "15 m",
+    "image": "assets/images/smoothies/Falloda_1.jpg",
+    "ingredients": [
+    "2 cups milk",
+    "2 tablespoons sugar",
+    "2 tablespoons rose syrup",
+    "2 tablespoons basil seeds (sabja seeds), soaked in water",
+    "1/2 cup vermicelli, cooked",
+    "2 scoops vanilla or rose-flavored ice cream",
+    "2 tablespoons jelly cubes (optional)",
+    "1/4 cup mixed nuts (pistachios, almonds, cashews), chopped",
+    "1 tablespoon tutti-frutti (optional)",
+    "1 tablespoon sweetened condensed milk (optional)"
+  ],
+  "instructions": [
+    "In a saucepan, heat the milk and sugar over medium heat. Stir until the sugar dissolves. Let the milk cool completely.",
+    "Soak the basil seeds in water for 10 minutes until they swell. Drain and set aside.",
+    "Cook the vermicelli according to package instructions. Rinse with cold water and set aside.",
+    "In a tall glass, layer the rose syrup at the bottom.",
+    "Add the soaked basil seeds, cooked vermicelli, and jelly cubes (if using) over the syrup.",
+    "Pour the cooled milk into the glass until it is 3/4 full.",
+    "Add a scoop of ice cream on top.",
+    "Garnish with chopped nuts, tutti-frutti, and a drizzle of sweetened condensed milk (if using).",
+    "Serve immediately with a straw and spoon!"
+  ],
+    "category": "Smoothies & Shakes"
+  },
+  {
+    "id": 18,
+    "name": "Graphes Smoothie",
+    "time": "5 m",
+    "image": "assets/images/smoothies/graphes_smoothie.jpg",
+    "ingredients": [
+    "2 cups seedless grapes (red or green)",
+    "1 banana (optional, for creaminess)",
+    "1/2 cup yogurt (plain or vanilla)",
+    "1/2 cup milk (dairy or plant-based)",
+    "1-2 tablespoons honey or maple syrup (optional, for sweetness)",
+    "1/2 cup ice cubes"
+  ],
+  "instructions": [
+    "Wash the grapes thoroughly and remove any stems.",
+    "Add the grapes, banana (if using), yogurt, milk, honey or maple syrup (if using), and ice cubes to a blender.",
+    "Blend on high speed until smooth and creamy.",
+    "Taste and adjust sweetness, if needed, by adding more honey or syrup.",
+    "Pour into a glass and serve immediately.",
+    "Optional: Garnish with a few whole grapes or a mint leaf."
+  ],
+    "category": "Smoothies & Shakes"
+  },
+  {
+    "id": 36,
+    "name": "Air Fryer Tuna Cake",
+    "time": "25 m",
+    "image": "assets/images/bites/air-fryer-tuna-cakes.jpg",
+    "ingredients": [
+    "2 cans (5 oz each) tuna in water, drained",
+    "1/2 cup breadcrumbs",
+    "1/4 cup finely chopped onion",
+    "1/4 cup finely chopped bell pepper",
+    "1/4 cup mayonnaise",
+    "1 tablespoon Dijon mustard",
+    "1 teaspoon garlic powder",
+    "1/2 teaspoon dried parsley",
+    "Salt and black pepper to taste",
+    "1 egg",
+    "Olive oil spray for air frying"
+  ],
+  "instructions": [
+    "In a large bowl, combine the drained tuna, breadcrumbs, chopped onion, chopped bell pepper, mayonnaise, Dijon mustard, garlic powder, parsley, salt, black pepper, and egg. Mix well until all ingredients are fully incorporated.",
+    "Form the mixture into 6-8 patties, ensuring they are compact and evenly shaped.",
+    "Preheat your air fryer to 375°F (190°C).",
+    "Spray the air fryer basket with olive oil to prevent sticking. Place the tuna cakes in the basket in a single layer, making sure they aren't touching each other.",
+    "Air fry the tuna cakes for 10-12 minutes, flipping them halfway through the cooking time, until they are golden brown and crispy.",
+    "Serve hot with a dipping sauce of your choice or on a bun for a tuna burger."
+  ],
+    "category": "Starters & Bites"
+  },
+  {
+    "id": 19,
+    "name": "Iced Caramel Macchiato",
+    "time": "5 m",
+    "image": "assets/images/smoothies/Iced-Caramel-Macchiato.jpg",
+    "ingredients": [
+    "1 cup ice cubes",
+    "1 cup milk (dairy or plant-based)",
+    "2 shots espresso or 1/2 cup strong brewed coffee",
+    "2 tablespoons caramel sauce (plus extra for drizzling)",
+    "1 teaspoon vanilla syrup (optional)"
+  ],
+  "instructions": [
+    "Fill a tall glass with ice cubes.",
+    "Pour the milk over the ice.",
+    "Drizzle the caramel sauce over the milk and ice.",
+    "Optional: Add vanilla syrup for extra flavor.",
+    "Carefully pour the espresso or strong brewed coffee over the milk to create a layered effect.",
+    "Drizzle additional caramel sauce on top.",
+    "Stir before drinking and serve with a straw."
+  ],
+    "category": "Smoothies & Shakes"
+  },
+  {
+    "id": 11,
+    "name": "Vegetable Noodles Soup",
+    "time": "30 m",
+    "image": "assets/images/soup/vegetable-noodle-soup-sq.jpg",
+    "ingredients": [
+    "2 tablespoons olive oil",
+    "1 onion, chopped",
+    "2 carrots, peeled and diced",
+    "2 celery stalks, diced",
+    "2 cloves garlic, minced",
+    "1 zucchini, diced",
+    "1 cup broccoli florets",
+    "6 cups vegetable broth",
+    "1 teaspoon dried thyme",
+    "1/2 teaspoon dried oregano",
+    "Salt to taste",
+    "Black pepper to taste",
+    "150g egg noodles or spaghetti, broken into smaller pieces",
+    "1 cup spinach or kale, chopped",
+    "1 tablespoon soy sauce (optional)",
+    "Fresh parsley or green onions for garnish (optional)"
+  ],
+  "instructions": [
+    "In a large pot, heat olive oil over medium heat. Add chopped onion, carrots, celery, and garlic. Sauté for 5-7 minutes until softened.",
+    "Add zucchini and broccoli, and cook for another 3-4 minutes.",
+    "Pour in the vegetable broth, and add thyme, oregano, salt, and black pepper. Bring to a boil.",
+    "Add the noodles to the boiling soup and cook according to the package instructions, usually 8-10 minutes.",
+    "During the last 2-3 minutes of cooking, stir in the spinach or kale and soy sauce, if using.",
+    "Taste and adjust seasoning with more salt or pepper if needed.",
+    "Serve hot, garnished with fresh parsley or green onions if desired."
+  ],
+    "category": "Soups & Stews"
+  },
+  {
+    "id": 35,
+    "name": "Crispy Buffalo Wings",
+    "time": "40 m",
+    "image": "assets/images/bites/crispy-buffalo-wings.jpg",
+    "ingredients": [
+    "1 kg chicken wings, cut into drumettes and flats",
+    "1 cup all-purpose flour",
+    "1 teaspoon paprika",
+    "1 teaspoon garlic powder",
+    "1 teaspoon onion powder",
+    "1 teaspoon salt",
+    "1/2 teaspoon black pepper",
+    "1/4 teaspoon cayenne pepper (optional, for extra heat)",
+    "Oil for frying",
+    "1/2 cup unsalted butter, melted",
+    "1/2 cup hot sauce (like Frank's RedHot)",
+    "1 tablespoon honey (optional)"
+  ],
+  "instructions": [
+    "Rinse and pat dry the chicken wings with paper towels.",
+    "In a large bowl, mix flour, paprika, garlic powder, onion powder, salt, black pepper, and cayenne pepper.",
+    "Coat the chicken wings evenly with the flour mixture. Shake off excess flour and place them on a tray. Let them rest for 15 minutes to allow the coating to stick.",
+    "Heat oil in a deep fryer or large pot to 175°C (350°F).",
+    "Fry the chicken wings in batches until golden brown and crispy, about 10-12 minutes per batch. Drain on paper towels.",
+    "In a separate bowl, whisk together melted butter, hot sauce, and honey (if using) to make the buffalo sauce.",
+    "Toss the fried chicken wings in the buffalo sauce until well coated.",
+    "Serve immediately with ranch or blue cheese dressing and celery sticks."
+  ],
+    "category": "Starters & Bites"
+  },
+  {
+    "id": 20,
+    "name": "Creamy Mango Milkshake",
+    "time": "5 m",
+    "image": "assets/images/smoothies/creamy_mango_milkshake.jpg",
+    "ingredients": [
+    "2 ripe mangoes, peeled and diced",
+    "2 cups chilled milk (dairy or plant-based)",
+    "2-3 tablespoons sugar or honey (adjust to taste)",
+    "1/4 cup vanilla ice cream (optional, for extra creaminess)",
+    "1/2 cup crushed ice",
+    "1 tablespoon chopped nuts (almonds, pistachios, or cashews) for garnish (optional)"
+  ],
+  "instructions": [
+    "In a blender, add the diced mangoes, chilled milk, sugar or honey, and crushed ice.",
+    "Blend on high speed until smooth and creamy.",
+    "If using, add vanilla ice cream and blend again for extra creaminess.",
+    "Taste and adjust sweetness if needed.",
+    "Pour the milkshake into a glass.",
+    "Optional: Garnish with chopped nuts or a small mango slice on the rim.",
+    "Serve immediately and enjoy your creamy mango milkshake!"
+  ],
+    "category": "Smoothies & Shakes"
+  },
+  {
+    "id": 21,
+    "name": "Papaya Smoothie",
+    "time": "5 m",
+    "image": "assets/images/smoothies/papaya_smoothie.jpg",
+    "ingredients": [
+    "1 ripe papaya, peeled and cubed",
+    "1/2 cup yogurt (plain or vanilla)",
+    "1/2 cup orange juice",
+    "1/2 cup milk (dairy or plant-based)",
+    "1 tablespoon honey or maple syrup (optional, for sweetness)",
+    "1/2 cup ice cubes"
+  ],
+  "instructions": [
+    "Peel and cube the papaya.",
+    "Add the papaya cubes, yogurt, orange juice, milk, honey or maple syrup, and ice cubes to a blender.",
+    "Blend until smooth and creamy.",
+    "Taste and adjust sweetness by adding more honey or syrup if desired.",
+    "Pour into a glass and serve immediately."
+  ],
+    "category": "Smoothies & Shakes"
+  },
+  {
+    "id": 31,
+    "name": "Chicken Shawarma",
+    "time": "90 m",
+    "image": "assets/images/bites/Chicken-Shawarma-3.jpg",
+    "ingredients": [
+    "500g chicken thighs (boneless and skinless)",
+    "3 tablespoons olive oil",
+    "1 tablespoon lemon juice",
+    "3 cloves garlic, minced",
+    "1 teaspoon ground cumin",
+    "1 teaspoon ground coriander",
+    "1 teaspoon paprika",
+    "1/2 teaspoon ground turmeric",
+    "1/2 teaspoon ground cinnamon",
+    "1/4 teaspoon cayenne pepper",
+    "Salt and pepper to taste",
+    "Pita bread or flatbreads (for serving)",
+    "Tahini sauce or garlic sauce (for serving)",
+    "Fresh parsley (optional, for garnish)",
+    "Sliced vegetables (tomatoes, cucumber, onion, lettuce, optional, for serving)"
+  ],
+  "instructions": [
+    "In a bowl, combine olive oil, lemon juice, garlic, cumin, coriander, paprika, turmeric, cinnamon, cayenne pepper, salt, and pepper. Mix well to create the marinade.",
+    "Place the chicken thighs in a resealable bag or shallow dish, pour the marinade over the chicken, and toss to coat. Marinate for at least 1 hour, preferably overnight for more flavor.",
+    "Preheat your grill or stovetop grill pan over medium heat.",
+    "Grill the chicken thighs for 6-7 minutes per side, or until fully cooked and the internal temperature reaches 165°F (75°C).",
+    "Once cooked, remove the chicken from the grill and let it rest for a few minutes before slicing it into thin strips.",
+    "Serve the chicken shawarma in pita bread or flatbreads, topped with tahini or garlic sauce, fresh vegetables, and a sprinkle of parsley, if desired."
+  ],
+    "category": "Starters & Bites"
+  },
+  {
+    "id": 22,
+    "name": "Watermelon Juice",
+    "time": "5 m",
+    "image": "assets/images/smoothies/Watermelon-Juice.jpg",
+    "ingredients": [
+    "4 cups watermelon, cubed and seeds removed",
+    "1 tablespoon lime juice (optional)",
+    "1 teaspoon honey or sugar (optional, for sweetness)",
+    "1/2 cup cold water or ice cubes"
+  ],
+  "instructions": [
+    "Cut the watermelon into cubes and remove the seeds.",
+    "Add the watermelon cubes, lime juice (if using), honey or sugar (if using), and cold water or ice cubes to a blender.",
+    "Blend until smooth and liquefied.",
+    "Taste and adjust sweetness, adding more honey or sugar if needed.",
+    "Pour into a glass and serve chilled."
+  ],
+    "category": "Smoothies & Shakes"
+  },
+  {
+    "id": 37,
+    "name": "Chicken Nuggets",
+    "time": "30 m",
+    "image": "assets/images/bites/Chicken_nuggets.png",
+    "ingredients": [
+    "2 chicken breasts, cut into bite-sized pieces",
+    "1/2 cup all-purpose flour",
+    "1 teaspoon garlic powder",
+    "1 teaspoon onion powder",
+    "1 teaspoon paprika",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon black pepper",
+    "2 large eggs",
+    "1 cup breadcrumbs",
+    "1/4 cup grated Parmesan cheese",
+    "Oil for frying"
+  ],
+  "instructions": [
+    "In a shallow bowl, combine the flour, garlic powder, onion powder, paprika, salt, and black pepper.",
+    "In another bowl, beat the eggs.",
+    "In a third bowl, combine the breadcrumbs and grated Parmesan cheese.",
+    "Coat each piece of chicken first in the seasoned flour mixture, then dip it in the beaten eggs, and finally coat it in the breadcrumb mixture, pressing gently to ensure it sticks.",
+    "Heat oil in a deep frying pan over medium heat. Fry the chicken nuggets in batches for about 4-5 minutes, turning occasionally, until they are golden brown and cooked through.",
+    "Remove from the oil and drain on paper towels.",
+    "Serve hot with your favorite dipping sauce such as ketchup, BBQ sauce, or honey mustard."
+  ],
+    "category": "Starters & Bites"
+  },
+  {
+    "id": 24,
+    "name": "Coffee Smoothie",
+    "time": "5 m",
+    "image": "assets/images/smoothies/coffee-smoothie.jpg",
+    "ingredients": [
+    "1/2 cup brewed coffee (cooled)",
+    "1/2 cup milk (dairy or plant-based)",
+    "1/2 banana (optional, for creaminess)",
+    "1 tablespoon honey or maple syrup (optional, for sweetness)",
+    "1/2 cup ice cubes",
+    "1 teaspoon vanilla extract (optional)"
+  ],
+  "instructions": [
+    "Brew a strong cup of coffee and let it cool to room temperature.",
+    "Add the brewed coffee, milk, banana (if using), honey or maple syrup (if using), ice cubes, and vanilla extract (if using) to a blender.",
+    "Blend on high speed until smooth and creamy.",
+    "Taste and adjust sweetness by adding more honey or syrup if desired.",
+    "Pour into a glass and serve immediately."
+  ],
+    "category": "Smoothies & Shakes"
+  },
+  {
+    "id": 33,
+    "name": "Crispy Chicken Wings",
+    "time": "45 m",
+    "image": "assets/images/bites/crispy-chicken-wings.jpg",
+    "ingredients": [
+    "10-12 chicken wings",
+    "1 tablespoon olive oil",
+    "1 teaspoon garlic powder",
+    "1 teaspoon onion powder",
+    "1/2 teaspoon paprika",
+    "1/2 teaspoon cayenne pepper (optional for heat)",
+    "Salt and black pepper to taste",
+    "1/4 cup all-purpose flour",
+    "1/4 cup cornstarch",
+    "Oil for frying"
+  ],
+  "instructions": [
+    "Preheat your oven to 425°F (220°C). Line a baking sheet with parchment paper or a wire rack.",
+    "Pat the chicken wings dry with paper towels to ensure they become crispy.",
+    "In a small bowl, mix together garlic powder, onion powder, paprika, cayenne pepper, salt, and black pepper.",
+    "In a separate bowl, combine the all-purpose flour and cornstarch.",
+    "Toss the chicken wings in the flour and cornstarch mixture until fully coated.",
+    "In a large skillet or deep fryer, heat oil over medium-high heat. Fry the wings in batches for about 8-10 minutes, turning occasionally, until golden brown and crispy.",
+    "Once fried, transfer the wings to the prepared baking sheet or wire rack and bake in the preheated oven for an additional 10-15 minutes to ensure they're cooked through and extra crispy.",
+    "Serve hot with your favorite dipping sauce (e.g., ranch, blue cheese, or buffalo sauce)."
+  ],
+    "category": "Starters & Bites"
+  },
+  {
+    "id": 32,
+    "name": "Vegetable Spring Rolls",
+    "time": "30 m",
+    "image": "assets/images/bites/vegetable-spring-rolls-recipe.jpg",
+    "ingredients": [
+    "10-12 spring roll wrappers",
+    "1 cup cabbage, thinly sliced",
+    "1/2 cup carrots, julienned",
+    "1/2 cup bell peppers, thinly sliced",
+    "1/4 cup mushrooms, sliced",
+    "1/4 cup bean sprouts (optional)",
+    "1/4 cup green onions, chopped",
+    "1 tablespoon soy sauce",
+    "1 teaspoon sesame oil",
+    "1/4 teaspoon black pepper",
+    "Oil for frying"
+  ],
+  "instructions": [
+    "In a large bowl, combine cabbage, carrots, bell peppers, mushrooms, bean sprouts (if using), and green onions.",
+    "Add soy sauce, sesame oil, and black pepper to the vegetables, and toss to combine.",
+    "Lay a spring roll wrapper on a flat surface, with one corner facing you. Place a small amount of the vegetable mixture in the center.",
+    "Fold the bottom corner of the wrapper over the filling, then fold in the sides, and roll tightly to seal the spring roll. Repeat with the remaining wrappers and filling.",
+    "Heat oil in a deep frying pan or wok over medium heat. Carefully add the spring rolls and fry for 3-4 minutes, or until golden brown and crispy.",
+    "Remove from the oil and drain on paper towels.",
+    "Serve hot with a dipping sauce of your choice (e.g., sweet chili sauce, soy sauce, or peanut sauce)."
+  ],
+    "category": "Starters & Bites"
+  },
+  {
+    "id": 25,
+    "name": "Latte",
+    "time": "5 m",
+    "image": "assets/images/smoothies/cafe-latte.jpg",
+    "ingredients": [
+    "1 shot of espresso (or 1/2 cup strong brewed coffee)",
+    "3/4 cup steamed milk (dairy or plant-based)",
+    "1 tablespoon sugar or sweetener (optional)",
+    "Cinnamon or cocoa powder for garnish (optional)"
+  ],
+  "instructions": [
+    "Brew a shot of espresso or prepare 1/2 cup of strong brewed coffee.",
+    "Steam the milk until it is frothy and hot (you can use a milk frother or heat it on the stove and whisk to create froth).",
+    "Pour the brewed espresso or coffee into a cup.",
+    "Slowly pour the steamed milk into the espresso, holding back the foam with a spoon.",
+    "Top with the remaining foam and optionally add sweetener and garnish with a sprinkle of cinnamon or cocoa powder.",
+    "Serve hot and enjoy!"
+  ],
+    "category": "Smoothies & Shakes"
+  },
+  {
+    "id": 28,
+    "name": "Chicken Patties",
+    "time": "40 m",
+    "image": "assets/images/bites/chicken-patties.jpg",
+    "ingredients": [
+    "500g ground chicken",
+    "1 small onion, finely chopped",
+    "2 cloves garlic, minced",
+    "1/4 cup breadcrumbs",
+    "1/4 cup grated Parmesan cheese",
+    "1 egg",
+    "1 teaspoon dried oregano",
+    "1 teaspoon paprika",
+    "Salt and pepper to taste",
+    "2 tablespoons olive oil (for frying)",
+    "Lettuce or sandwich buns (optional, for serving)"
+  ],
+  "instructions": [
+    "In a large bowl, combine ground chicken, onion, garlic, breadcrumbs, Parmesan cheese, egg, oregano, paprika, salt, and pepper.",
+    "Mix everything together until well combined, and form the mixture into 4-6 patties.",
+    "Heat olive oil in a large skillet over medium heat.",
+    "Fry the patties for 4-5 minutes on each side, until golden brown and cooked through.",
+    "Remove the patties from the skillet and drain on paper towels.",
+    "Serve the chicken patties on a bed of lettuce or in sandwich buns, if desired."
+  ],
+    "category": "Starters & Bites"
+  },
+  
+  {
+    "id": 35,
+    "name": "Grilled Chicken Marinade",
+    "time": "40 m",
+    "image": "assets/images/bites/Grilled-Chicken-Marinade.jpg",
+    "ingredients": [
+    "1/4 cup olive oil",
+    "2 tablespoons lemon juice",
+    "2 tablespoons soy sauce",
+    "2 tablespoons honey",
+    "3 cloves garlic, minced",
+    "1 teaspoon dried oregano",
+    "1 teaspoon paprika",
+    "1/2 teaspoon ground cumin",
+    "Salt and black pepper to taste",
+    "4 boneless, skinless chicken breasts or thighs"
+  ],
+  "instructions": [
+    "In a bowl, combine olive oil, lemon juice, soy sauce, honey, garlic, oregano, paprika, cumin, salt, and black pepper. Stir well to combine.",
+    "Place the chicken breasts or thighs in a resealable plastic bag or shallow dish.",
+    "Pour the marinade over the chicken, ensuring it is evenly coated. Seal the bag or cover the dish and refrigerate for at least 30 minutes, preferably 1-2 hours for more flavor.",
+    "Preheat the grill to medium-high heat.",
+    "Remove the chicken from the marinade and discard any excess marinade.",
+    "Grill the chicken for 6-7 minutes per side, or until the internal temperature reaches 165°F (75°C) and the chicken is fully cooked.",
+    "Serve hot and enjoy with your favorite sides or in a salad."
+  ],
+    "category": "Starters & Bites"
   }
+  
+  
 ]

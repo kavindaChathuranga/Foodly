@@ -72,7 +72,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment:
-          MainAxisAlignment.start, // Align the content to the top
+              MainAxisAlignment.start, // Align the content to the top
           children: [
             SizedBox(height: 250), // Add some space from the top
             AnimatedOpacity(
