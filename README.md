@@ -57,3 +57,16 @@ Here are some interface screenshots of the app:
 ### Demonstration
 Here's a short demonstration of the app:
 <p align="center"> <a href="https://youtu.be/ix8vhLV0cF4"> <img src="./demonstration/screenshots/demo_thumbnail.png" alt="App Demo" width="50%" height="50%" /> </a> </p>
+
+---
+
+## Final APK Download
+
+You can download the latest version of the **Foodly** APK from the link below:
+
+➡ **[Download APK]([https://drive.google.com/your-apk-link](https://drive.google.com/file/d/1R9zIJTWLCMEbeCzAI3LxJbbsMk7NWZVj/view?usp=sharing))**
+
+---
+
+### ⚠ Important Note
+- **Last Updated:** *2025-02-09*
