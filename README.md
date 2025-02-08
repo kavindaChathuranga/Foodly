@@ -64,7 +64,7 @@ Here's a short demonstration of the app:
 
 You can download the latest version of the **Foodly** APK from the link below:
 
-➡ **[Download APK][https://drive.google.com/your-apk-link](https://drive.google.com/file/d/1R9zIJTWLCMEbeCzAI3LxJbbsMk7NWZVj/view?usp=sharing)**
+➡ **[Download APK] [Download Foodly apk](https://drive.google.com/file/d/1R9zIJTWLCMEbeCzAI3LxJbbsMk7NWZVj/view?usp=sharing)**
 
 ---
 
